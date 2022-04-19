@@ -6,6 +6,7 @@ h1 {
 
 body {
     text-align: center;
+        background: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
 }
 
 img {
@@ -14,9 +15,8 @@ img {
     width:30px
 }
 
-nav {
-    background-color:black;
-
+p {
+    text-align:center;
 }
 
 ul {

@@ -1,3 +1,5 @@
+import '../App.css'
+
 function ContactInfo () {
  <html>
    <p>
@@ -12,3 +14,5 @@ function ContactInfo () {
    </p>
  </html>
 }
+
+export default ContactInfo;
