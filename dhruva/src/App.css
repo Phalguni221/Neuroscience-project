@@ -1,12 +1,16 @@
 h1 {
-  font: 45px;
+  font: 25px;
   color:black;
   text-align: center
 }
 
+h2 {
+  text-align:center;
+
+}
 body {
   text-align: center;
-      background-color:aquamarine
+ background-color:lightblue
 }
 
 img {
@@ -17,9 +21,14 @@ img {
 
 p {
   text-align:center;
+  color: black;
+  width:1920px;
 }
 
-ul {
-  color:purple;
-  
+a {
+  color:palegoldenrod;
+}
+
+li {
+  color:black;
 }

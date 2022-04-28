@@ -1,5 +1,4 @@
 import '../assets/neurostyle.css'
-import ContactInfo from './ContactInfo';
 
 function Default () {
     return (

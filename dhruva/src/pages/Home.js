@@ -1,80 +1,130 @@
 import styled from "styled-components";
-
-import Default from './default';
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
+// import Default from './default';
 import ContactInfo from './ContactInfo';
 import NewInfo from "./NewInfo";
 import Technology from "./Technology";
 
+
 //For styled main container
 const Container = styled.div`
-background-color:lightblue;
-height:20px;
-text-align:center;
+background-color: lightblue;
+height: 3400px;
+text-align: center;
+position: fixed;
 `;
 
 //For wrapper
 const Wrapper = styled.div`
 background-color:black;
-width:10px;
-height:20px;
+padding: 40px 20px;
+display:flex;
+width:1950px;
+height:300px;
+text-align:center;
+`;
+
+const Navbar = styled.div`
+background-color:black;
+width:450px;
+padding:10px 20px;
+display:flex;
+margin-top:50px;
+margin-left:750px;
 `;
 
 const Home = () => {
    return (
-   
-   <div>
 
-    <head>
-        <h1>Welcome to the site!</h1>
-    </head>
-<body>
-    <background src="./Nueralink.png"></background>
+   <div>
+<Container>
+
+     <p>
+<h1>Welcome to the site!</h1>
+    </p>
+
     <p>
         <h1>Links</h1>
     </p>
+
+    <Wrapper>
+
+<BrowserRouter>
+<Navbar>
+
+            <p>
+             <li>
+                <Link to="/">Home</Link>
+              </li>
+            </p>
+
+            <p>
+              <li>
+                <Link to="/Technology">Technology</Link>
+              </li>
+            </p>
+
+            <p>
+              <li>
+                <Link to="/NewInfo">New Info</Link>
+              </li>
+            </p>
+            
+            <p>  
+              <li>
+                <Link to="/ContactInfo">Contact Info</Link>
+              </li>
+            </p>
+
+            <div className="display">   
+    
+        </div>
+     </Navbar> 
+
+      {/* <Routes>
+        <Route path="/" element={
+            <Home/>
+          } />
+
+         <Route path="/Technology" element={
+            <Technology/>
+         } />
+
+          <Route path="/NewInfo" element={
+            <NewInfo/>
+            } />
+
+         <Route path="/ContactInfo" element={
+            <ContactInfo/>
+            } />  
+    </Routes>         */}
+</BrowserRouter>
+
  
-    <p>
-    <Container>
-    <ul>
-     <a href="./pages/Home.js">Home</a>
-    </ul>
-    </Container>
-<br></br>
-<Container>
-    <ul>
-        <a href="./pages/NewInfo.js">New Information</a>
-    </ul>
-</Container>
 
-<Container>
-    <ul>
-        <a href="pages/Technology.js">Technology</a>
-    </ul>
- </Container>
-
- <Container>
-    <ul>
-        <a href="ContactInfo.js">ContactInfo</a>
-    </ul>
-    </Container>
-
-    <Container>
-    <ul>
-        <a href="./pages/navbar.html">Click here to access different links on the site!</a>
-    </ul>
-    </Container>
-     </p>   
+  
     <img src = "./assets/Nueralink.png"></img>
+
     <h2>
         <p>
         This site is intended to inform visitors more about nueroscience and the ongoing technological advances geared towards helping mitigate
         current neurological dilemmas! 
         Feel free to explore the site, play some games, and learn more about what products we are currently working on in Dhruva!
-    </p>
+        </p>
     </h2>
+
+</Wrapper>
+
 <h2>Website Content</h2>
-</body>
-<ContactInfo></ContactInfo>
+<Container>
+
+<ContactInfo/>
+
+</Container>
+
+</Container>
+
+
 
 </div>
    );
