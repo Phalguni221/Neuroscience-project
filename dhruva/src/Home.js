@@ -28,9 +28,9 @@ const Navbar = styled.div`
 background-color:black;
 width:600px;
 height:20px;
-// padding:10px;
+padding:10px;
 display:flex;
-margin-left:700px;
+margin-left:400px;
 
 `;
 
@@ -92,15 +92,7 @@ const Home = () => {
    <div>
 <Container>
 
-     <p>
 <h1>Welcome to the site!</h1>
-    </p>
-
-    <p>
-        <h1>Links</h1>
-    </p>
-
-    <Wrapper>
 
 <BrowserRouter>
 {/* <button onclick="scrollWin()" style="position:fixed">Scroll to 200 horizontally!</button><br></br> */}
@@ -151,9 +143,11 @@ const Home = () => {
 
 </BrowserRouter>
 
+<Wrapper>
 </Wrapper>
 
 <h2>Website Content</h2>
+
 <Slider>
   <LeftArrow></LeftArrow>    
 

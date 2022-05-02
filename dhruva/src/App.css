@@ -1,10 +1,11 @@
 a {
   color: palegoldenrod;
   cursor: pointer;
-  /* position: relative; */
+  position: fixed;
   font-size: 20px;
-  width: 50px;
-  height: 100px;
+  width: 90px;
+  height: 60px;
+  padding:10px ;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
   background-color: blue;
