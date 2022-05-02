@@ -1,7 +1,7 @@
+import { BrowserRouter, Link } from 'react-router-dom'
 import styled from "styled-components";
-import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
 // import Default from './default';
-import ContactInfo from './ContactInfo';
+// import ContactInfo from './ContactInfo';
 import NewInfo from "./NewInfo";
 import Technology from "./Technology";
 
@@ -20,7 +20,7 @@ background-color:black;
 padding: 40px 20px;
 display:flex;
 width:1950px;
-height:300px;
+height:700px;
 text-align:center;
 `;
 
@@ -29,10 +29,15 @@ background-color:black;
 width:450px;
 padding:10px 20px;
 display:flex;
-margin-top:50px;
-margin-left:750px;
+// margin-top:10px;
+margin-left:700px;
 `;
 
+const ContactInfo = styled.div`
+background-color:skyblue;
+position:fixed;
+
+`;
 const Home = () => {
    return (
 
@@ -50,51 +55,49 @@ const Home = () => {
     <Wrapper>
 
 <BrowserRouter>
+{/* <button onclick="scrollWin()" style="position:fixed">Scroll to 200 horizontally!</button><br></br> */}
 <Navbar>
 
-            <p>
-             <li>
+           
+              <li>
                 <Link to="/">Home</Link>
               </li>
-            </p>
-
-            <p>
+            
+            <br></br>
+            <br></br>
+            
               <li>
-                <Link to="/Technology">Technology</Link>
+                <Link to="/Technology">Tech</Link>
               </li>
-            </p>
+          
 
-            <p>
+            
               <li>
                 <Link to="/NewInfo">New Info</Link>
               </li>
-            </p>
             
-            <p>  
+            
+            
               <li>
                 <Link to="/ContactInfo">Contact Info</Link>
               </li>
-            </p>
-
-            <div className="display">   
-    
-        </div>
-     </Navbar> 
+              
+</Navbar> 
 
       {/* <Routes>
         <Route path="/" element={
             <Home/>
           } />
 
-         <Route path="/Technology" element={
+         <Route path="Technology" element={
             <Technology/>
          } />
 
-          <Route path="/NewInfo" element={
+          <Route path="NewInfo" element={
             <NewInfo/>
             } />
 
-         <Route path="/ContactInfo" element={
+         <Route path="ContactInfo" element={
             <ContactInfo/>
             } />  
     </Routes>         */}
@@ -103,27 +106,20 @@ const Home = () => {
  
 
   
-    <img src = "./assets/Nueralink.png"></img>
+ 
 
-    <h2>
+    {/* <h2>
         <p>
         This site is intended to inform visitors more about nueroscience and the ongoing technological advances geared towards helping mitigate
         current neurological dilemmas! 
         Feel free to explore the site, play some games, and learn more about what products we are currently working on in Dhruva!
         </p>
-    </h2>
+    </h2> */}
 
 </Wrapper>
 
 <h2>Website Content</h2>
-<Container>
-
-<ContactInfo/>
-
 </Container>
-
-</Container>
-
 
 
 </div>

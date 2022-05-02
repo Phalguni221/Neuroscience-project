@@ -6,8 +6,17 @@ h1 {
 
 body {
     text-align: center;
-        background: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
+        border:white;
 }
+
+  body::-webkit-scrollbar {
+    width: 1em;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: #666;
+    outline: 1px solid #eee;
+  }
 
 img {
     position:fixed;
@@ -17,6 +26,7 @@ img {
 
 p {
     text-align:center;
+    margin: 80px auto 0 auto;
 }
 
 ul {
