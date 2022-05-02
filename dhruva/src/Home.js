@@ -1,9 +1,9 @@
-import { BrowserRouter, Link } from 'react-router-dom'
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
 import styled from "styled-components";
 // import Default from './default';
-// import ContactInfo from './ContactInfo';
-import NewInfo from "./NewInfo";
-import Technology from "./Technology";
+import ContactInfo from './pages/ContactInfo';
+import NewInfo from "./pages/NewInfo";
+import Technology from "./pages/Technology";
 
 
 //For styled main container
@@ -17,27 +17,75 @@ position: fixed;
 //For wrapper
 const Wrapper = styled.div`
 background-color:black;
-padding: 40px 20px;
+margin-left: 200px;
 display:flex;
-width:1950px;
+width:1600px;
 height:700px;
-text-align:center;
+image-align:center;
 `;
 
 const Navbar = styled.div`
 background-color:black;
-width:450px;
-padding:10px 20px;
+width:600px;
+height:20px;
+// padding:10px;
 display:flex;
-// margin-top:10px;
 margin-left:700px;
-`;
-
-const ContactInfo = styled.div`
-background-color:skyblue;
-position:fixed;
 
 `;
+
+//For Arrow styling
+const LeftArrow = styled.div`
+  width: 70px;
+  height: 70px;
+  background-color: hotpink;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: ${(props) => props.direction === "left" && "10px"};
+  right: ${(props) => props.direction === "right" && "10px"};
+  margin-top:500px;
+  margin-right: -600px;
+  margin-left:0px;
+  cursor: pointer;
+  opacity: 1;
+  z-index: 2;
+`;
+
+const RightArrow = styled.div`
+width: 70px;
+height: 70px;
+background-color: skyblue;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+position: absolute;
+top: 0;
+bottom: 0;
+left: ${(props) => props.direction === "left" && "10px"};
+right: ${(props) => props.direction === "right" && "10px"};
+margin-top:500px;
+margin-right: 600px;
+margin-left:1800px;
+cursor: pointer;
+opacity: 1;
+z-index: 2;
+`;
+
+const Slider = styled.div`
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #${(props) => props.bg};
+`;
+
+
 const Home = () => {
    return (
 
@@ -69,8 +117,7 @@ const Home = () => {
               <li>
                 <Link to="/Technology">Tech</Link>
               </li>
-          
-
+        
             
               <li>
                 <Link to="/NewInfo">New Info</Link>
@@ -84,7 +131,7 @@ const Home = () => {
               
 </Navbar> 
 
-      {/* <Routes>
+      <Routes>
         <Route path="/" element={
             <Home/>
           } />
@@ -100,25 +147,18 @@ const Home = () => {
          <Route path="ContactInfo" element={
             <ContactInfo/>
             } />  
-    </Routes>         */}
+    </Routes>   
+
 </BrowserRouter>
-
- 
-
-  
- 
-
-    {/* <h2>
-        <p>
-        This site is intended to inform visitors more about nueroscience and the ongoing technological advances geared towards helping mitigate
-        current neurological dilemmas! 
-        Feel free to explore the site, play some games, and learn more about what products we are currently working on in Dhruva!
-        </p>
-    </h2> */}
 
 </Wrapper>
 
 <h2>Website Content</h2>
+<Slider>
+  <LeftArrow></LeftArrow>    
+
+  <RightArrow></RightArrow>
+</Slider>
 </Container>
 
 

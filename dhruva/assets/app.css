@@ -1,21 +1,20 @@
 a {
   color: palegoldenrod;
   cursor: pointer;
-  /* position: relative; */
-  font-size: 20px;
+  position: relative;
+  font-size: 5px;
   width: 50px;
   height: 100px;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
-  background-color: blue;
+  background-color: white;
   transition: all 1s;
 }
 a:before, a:after {
-  content: "";
   width: 0px;
-  height: 40px;
+  height: 20px;
   position: fixed;
-  border: 3px solid #fff;
+  border: 3px solid #aaa;
   transition: all 2s;
 }
 a:after {
@@ -40,7 +39,7 @@ a:hover:before, a:hover:after {
 }
 
 h1 {
-  font: 15px;
+  font: 25px;
   color: black;
   text-align: center;
 }
@@ -52,7 +51,7 @@ h2 {
 body {
   text-align: center;
   background-color: lightblue;
-  width: 500px;
+  width: 700px;
 }
 
 body::-webkit-scrollbar {
@@ -73,13 +72,11 @@ img {
 p {
   text-align: center;
   color: black;
-  width: 3000px;
+  width: 1920px;
 }
 
 li {
   color: black;
-  width:2000px;
-
 }
 
-/*# sourceMappingURL=App.css.map */
+/*# sourceMappingURL=app.css.map */

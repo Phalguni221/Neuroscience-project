@@ -2,26 +2,26 @@ a {
     color:palegoldenrod;
     cursor:pointer;
     position:relative;
-    font-size:40px;
+    font-size:5px;
     width:50px;
     height:100px;
     border-top-right-radius:10px;
     border-bottom-left-radius:10px;
     background-color:white;
     transition: all 1s;
-  &:after,&:before{
-    content:" ";
+    &:before,&:after{
+    // content:" ";
     width:0px;
-    height:40px;
+    height:20px;
     position:fixed;
-    border :3px solid #fff;
+    border :3px solid #aaa;
     transition:all 2s;
     }
   &:after{
     top:-3px;
     left:-1px;
-    // border-top:15px solid black;
-    // border-left:15px solid black;
+    border-top:15px solid black;
+    border-left:15px solid black;
   }
   &:before{
     bottom:-1px;
@@ -35,7 +35,6 @@ a {
     // background:rgba(0,0,0,.5);
     // color:white;
     &:before,&:after{
-      
       width:120%;
       height:90%;
       // border-color:white;
@@ -46,7 +45,8 @@ a {
 
 
 h1 {
-    font: 25px;
+    padding:40px 20px;
+    font-size: 25px;
     color:black;
     text-align: center
   }
@@ -55,11 +55,22 @@ h1 {
     text-align:center;
   
   }
+
   body {
   text-align: center;
    background-color:lightblue;
-   width:500px;
+   width:700px;
   }
+
+  body::-webkit-scrollbar {
+    width: 1em;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: #666;
+    outline: 1px solid #eee;
+  }
+
   
   img {
     position:fixed;
