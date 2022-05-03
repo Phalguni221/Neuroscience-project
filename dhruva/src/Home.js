@@ -18,10 +18,10 @@ position: fixed;
 const Wrapper = styled.div`
 background-color:black;
 margin-left: 200px;
+margin-top:20px;
 display:flex;
-width:1600px;
+width:1500px;
 height:700px;
-image-align:center;
 `;
 
 const Navbar = styled.div`
@@ -30,7 +30,7 @@ width:600px;
 height:20px;
 padding:10px;
 display:flex;
-margin-left:400px;
+margin-left:200px;
 
 `;
 
@@ -38,7 +38,7 @@ margin-left:400px;
 const LeftArrow = styled.div`
   width: 70px;
   height: 70px;
-  background-color: hotpink;
+  background-color: blue;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -49,8 +49,8 @@ const LeftArrow = styled.div`
   left: ${(props) => props.direction === "left" && "10px"};
   right: ${(props) => props.direction === "right" && "10px"};
   margin-top:500px;
-  margin-right: -600px;
-  margin-left:0px;
+  margin-right: 400px;
+  margin-left:50px;
   cursor: pointer;
   opacity: 1;
   z-index: 2;
@@ -59,7 +59,7 @@ const LeftArrow = styled.div`
 const RightArrow = styled.div`
 width: 70px;
 height: 70px;
-background-color: skyblue;
+background-color: blue;
 border-radius: 50%;
 display: flex;
 align-items: center;
@@ -70,8 +70,8 @@ bottom: 0;
 left: ${(props) => props.direction === "left" && "10px"};
 right: ${(props) => props.direction === "right" && "10px"};
 margin-top:500px;
-margin-right: 600px;
-margin-left:1800px;
+margin-right: 100px;
+margin-left:1830px;
 cursor: pointer;
 opacity: 1;
 z-index: 2;
@@ -146,6 +146,7 @@ const Home = () => {
 <Wrapper>
 </Wrapper>
 
+<br></br>
 <h2>Website Content</h2>
 
 <Slider>
