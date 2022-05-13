@@ -1,9 +1,9 @@
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
 import styled from "styled-components";
-// import Default from './default';
-import ContactInfo from './pages/ContactInfo';
-import NewInfo from "./pages/NewInfo";
-import Technology from "./pages/Technology";
+import Default from './default';
+import ContactInfo from './ContactInfo';
+import NewInfo from "./NewInfo";
+import Technology from "./Technology";
 
 
 //For styled main container
@@ -26,18 +26,20 @@ height:700px;
 
 const Navbar = styled.div`
 background-color:black;
-width:600px;
-height:20px;
+width:1500px;
+height:200px;
 padding:10px;
 display:flex;
+margin-top:100px;
 margin-left:200px;
+margin-right:900px;
 
 `;
 
 //For Arrow styling
 const LeftArrow = styled.div`
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   background-color: blue;
   border-radius: 50%;
   display: flex;
@@ -57,8 +59,8 @@ const LeftArrow = styled.div`
 `;
 
 const RightArrow = styled.div`
-width: 70px;
-height: 70px;
+width: 60px;
+height: 60px;
 background-color: blue;
 border-radius: 50%;
 display: flex;
@@ -71,7 +73,7 @@ left: ${(props) => props.direction === "left" && "10px"};
 right: ${(props) => props.direction === "right" && "10px"};
 margin-top:500px;
 margin-right: 100px;
-margin-left:1830px;
+margin-left:1800px;
 cursor: pointer;
 opacity: 1;
 z-index: 2;
@@ -90,10 +92,11 @@ const Home = () => {
    return (
 
    <div>
+     <Default/>
 <Container>
 
 <h1>Welcome to the site!</h1>
-
+   
 <BrowserRouter>
 {/* <button onclick="scrollWin()" style="position:fixed">Scroll to 200 horizontally!</button><br></br> */}
 <Navbar>
@@ -120,10 +123,8 @@ const Home = () => {
               <li>
                 <Link to="/ContactInfo">Contact Info</Link>
               </li>
-              
-</Navbar> 
 
-      <Routes>
+              {/* <Routes>
         <Route path="/" element={
             <Home/>
           } />
@@ -139,15 +140,16 @@ const Home = () => {
          <Route path="ContactInfo" element={
             <ContactInfo/>
             } />  
-    </Routes>   
+    </Routes>     */}
 
-</BrowserRouter>
-
-<Wrapper>
-</Wrapper>
+              
+</Navbar> 
+   
+</BrowserRouter>   
 
 <br></br>
 <h2>Website Content</h2>
+<ContactInfo />
 
 <Slider>
   <LeftArrow></LeftArrow>    
@@ -155,7 +157,6 @@ const Home = () => {
   <RightArrow></RightArrow>
 </Slider>
 </Container>
-
 
 </div>
    );

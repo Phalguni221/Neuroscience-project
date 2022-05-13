@@ -1,4 +1,5 @@
-function NewInfo () {
+
+export default function NewInfo () {
     <html>
       <p>
           <li>
@@ -13,5 +14,5 @@ function NewInfo () {
     </html>
    }
    
-   export default NewInfo;
+ 
    
