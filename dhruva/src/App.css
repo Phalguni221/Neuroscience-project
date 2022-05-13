@@ -6,20 +6,36 @@ h1 {
 
 body {
   text-align: center;
-      background-color:aquamarine
+      background-color:black;
+}
+
+h2{
+  background-color:white;
+  text-align:center;
+  font:25px;
 }
 
 img {
   position:fixed;
   height:3px;
-  width:30px
+  width:30px;
 }
 
 p {
+  background-color:white;
+  color:skyblue;
   text-align:center;
 }
 
-ul {
-  color:purple;
+li {
+  color:black;
   
+}
+
+a {
+  color:navy;
+}
+
+html {
+  scroll-behavior: smooth;
 }

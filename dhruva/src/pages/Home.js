@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import Default from './default';
+// import Default from './Default';
 import ContactInfo from './ContactInfo';
 import NewInfo from "./NewInfo";
 import Technology from "./Technology";
@@ -19,6 +19,14 @@ width:10px;
 height:20px;
 `;
 
+const Navbar = styled.div`
+background-color:skyblue;
+height:200px;
+width:2000px;
+position:fixed;
+text-align:center;
+`;
+
 const Home = () => {
    return (
    
@@ -29,52 +37,42 @@ const Home = () => {
     </head>
 <body>
     <background src="./Nueralink.png"></background>
-    <p>
-        <h1>Links</h1>
-    </p>
- 
-    <p>
-    <Container>
-    <ul>
+<Navbar>
+    <li>
      <a href="./pages/Home.js">Home</a>
-    </ul>
-    </Container>
+    </li>
 <br></br>
-<Container>
-    <ul>
+    <li>
         <a href="./pages/NewInfo.js">New Information</a>
-    </ul>
-</Container>
-
-<Container>
-    <ul>
+    </li>
+<br></br>
+    <li>
         <a href="pages/Technology.js">Technology</a>
-    </ul>
- </Container>
-
- <Container>
-    <ul>
+    </li>
+<br></br>
+    <li>
         <a href="ContactInfo.js">ContactInfo</a>
-    </ul>
-    </Container>
-
-    <Container>
-    <ul>
+    </li>
+<br></br>
+    <li>
         <a href="./pages/navbar.html">Click here to access different links on the site!</a>
-    </ul>
-    </Container>
-     </p>   
-    <img src = "./assets/Nueralink.png"></img>
+    </li>
+</Navbar>
+  
+    {/* <img src = "./assets/Nueralink.png"></img> */}
+<Container>
     <h2>
         <p>
         This site is intended to inform visitors more about nueroscience and the ongoing technological advances geared towards helping mitigate
         current neurological dilemmas! 
         Feel free to explore the site, play some games, and learn more about what products we are currently working on in Dhruva!
-    </p>
+        </p>
     </h2>
+</Container>
 <h2>Website Content</h2>
 </body>
-<ContactInfo></ContactInfo>
+
+
 
 </div>
    );

@@ -1,14 +1,14 @@
-import '../assets/neurostyle.css'
+
 import ContactInfo from './ContactInfo';
 
-function Default () {
+function Default() {
     return (
         <div>
-        <head>
-            <h1>dngjhdfjgf</h1>
-        </head>
     
     <footer>
+    <ContactInfo>
+        <h1>This is the contacts page</h1>
+        </ContactInfo>
     </footer>
     </div>
     );

@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "create-react-app": "^5.0.1",
+    "express": "^4.18.1",
+    "node": "^17.7.2",
+    "python": "^0.0.4",
+    "sequelize": "^6.19.0"
+  }
+}
