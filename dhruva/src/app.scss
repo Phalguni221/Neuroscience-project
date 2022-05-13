@@ -1,66 +1,82 @@
 a {
-  color:palegoldenrod;
-  cursor:pointer;
-  // position:relative;
-  font-size:5px;
-  text-align: center;
-  width:50px;
-  height:100px;
-  border-top-right-radius:10px;
-  border-bottom-left-radius:10px;
-  background-color:white;
+  color: palegoldenrod;
+  cursor: pointer;
+  position: fixed;
+  font-size: 20px;
+  width: 90px;
+  height: 60px;
+  padding: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: blue;
   transition: all 1s;
-  &:before,&:after{
-  // content:" ";
-  width:10px;
-  height:20px;
-  // position:fixed;
-  border :3px solid #aaa;
-  transition:all 2s;
-  }
-&:after{
-  top:-1px;
-  left:-1px;
-  border-top:15px solid black;
-  border-left:15px solid black;
-}
-&:before{
-  bottom:-1px;
-  right:-1px;
-  border-bottom:15px solid black;
-  border-right:15px solid black;
-}
-&:hover{
-  border-top-right-radius:10px;
-border-bottom-left-radius:10px;
-  // background:rgba(0,0,0,.5);
-  // color:white;
-  &:before,&:after{
-    width:120%;
-    height:90%;
-    // border-color:white;
-  }
-}
 }
 
+a:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: fixed;
+  top: 15%;
+  left: 5%;
+  border: 3px solid #fff;
+  transition: all 2s;
+}
 
+a:after {
+  top: -1px;
+  left: -1px;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+}
+
+a:before {
+  bottom: -1px;
+  right: -1px;
+  border-bottom: 5px solid black;
+  border-right: 5px solid black;
+}
+
+a:after {
+  top: -1px;
+  left: -1px;
+  border-top: 5px solid black;
+  border-left: 5px solid black;
+}
+
+a:hover {
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+a:hover:before, a:hover:after {
+  width: 120%;
+  height: 90%;
+}
 
 h1 {
-  padding:40px 20px;
-  font-size: 25px;
-  color:black;
-  text-align: center
+  padding: 40px 20px;
+  font-size: 40px;
+  color: black;
+  font: 40px Arial, sans-serif;
+  text-align: center;
+  text-shadow: 2px 2px 5px blue;
+  margin-right: 600px;
 }
 
 h2 {
-  text-align:center;
-
+  padding: 40px 20px;
+  font-size: 40px;
+  color: goldenrod;
+  font: 30px Arial, sans-serif;
+  text-align: center;
+  margin-right: 600px;
 }
 
 body {
-text-align: center;
- background-color:lightblue;
- width:700px;
+  text-align: center;
+  background-color: lightblue;
+  width: 700px;
 }
 
 body::-webkit-scrollbar {
@@ -72,21 +88,25 @@ body::-webkit-scrollbar-thumb {
   outline: 1px solid #eee;
 }
 
-
 img {
-  position:fixed;
-  height:3px;
-  width:30px
+  position: fixed;
+  height: 3px;
+  width: 30px;
 }
 
 p {
-  text-align:center;
+  text-align: center;
   color: black;
-  width:1920px;
+  width: 1920px;
 }
-
-
 
 li {
-  color:black;
+  color: black;
+  width: 200px;
+  margin-right: 300px;
+  text-align: center;
 }
+
+/*# sourceMappingURL=App.css.map */
+
+
