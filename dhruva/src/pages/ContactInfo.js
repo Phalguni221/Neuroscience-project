@@ -1,7 +1,7 @@
-
-
-function ContactInfo () {
- <div>
+export default function ContactInfo () {
+    return (
+      
+      <div>
        <li>
            Email address: Phalguni221@gmail.com
        </li>
@@ -15,6 +15,7 @@ function ContactInfo () {
      </li>
 
  </div>
+    )
 }
 
-export default ContactInfo;
+
