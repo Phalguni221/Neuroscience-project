@@ -1,5 +1,9 @@
+import React from 'react';
+import Layout from '../components/Layout'
 
-export default function NewInfo () {
+export default function NewInfo ({location}) {
+  return (
+    <Layout>
     <html>
       <p>
           <li>
@@ -12,6 +16,9 @@ export default function NewInfo () {
         </li>
       </p>
     </html>
+    </Layout>
+  )
+
    }
    
  

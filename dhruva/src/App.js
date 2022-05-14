@@ -1,9 +1,10 @@
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
-import styled from "styled-components";
 
+import {Link} from Gatsby;
 import ContactInfo from './pages/ContactInfo';
 import NewInfo from "./pages/NewInfo";
 import Technology from "./pages/Technology";
+import GatsbyLink from 'gatsby-link';
 
 
 //For styled main container
@@ -102,7 +103,7 @@ const Slider = styled.div`
 `;
 
 
-const App = () => {
+const App = ({location}) => {
    return (
 
    <div>
