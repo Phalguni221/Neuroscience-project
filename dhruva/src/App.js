@@ -1,6 +1,6 @@
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
-
-import {Link} from Gatsby;
+import styled from 'styled-components';
+// import {Link} from Gatsby;
 import ContactInfo from './pages/ContactInfo';
 import NewInfo from "./pages/NewInfo";
 import Technology from "./pages/Technology";
@@ -9,17 +9,18 @@ import GatsbyLink from 'gatsby-link';
 
 //For styled main container
 const Container = styled.div`
-background-color: lightblue;
+background-color:white;
 height: 3000px;
+width:300px;
 text-align: center;
-position: fixed;
+// position: fixed;
 `;
 
 
 //For wrapper
 // eslint-disable-next-line
 const Wrapper = styled.div`
-background-color:black;
+background-color:white;
 margin-left: 200px;
 margin-top:20px;
 display:flex;
@@ -42,12 +43,13 @@ margin-right:1100px;
 
 const Box = styled.div`
 border-radius:25px;
-border-color:black;
+border-color:white;
+background-color:white;
 width:900px;
 height:500px;
 
-margin-bottom:400px;
-margin-left:700px;
+// margin-bottom:400px;
+// margin-left:700px;
 
 `;
 
@@ -103,87 +105,93 @@ const Slider = styled.div`
 `;
 
 
-const App = ({location}) => {
-   return (
-
-   <div>
-
-<Container>
-{/* <h1>Welcome to the site!</h1>  */}
-
-<BrowserRouter>
-{/* <button onclick="scrollWin()" style="position:fixed">Scroll to 200 horizontally!</button><br></br> */}
-
-
-          <div display="list">
+const App = () => {
+  return (
+  <Container>
+    <h1>Neurosense</h1>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+          </button>
+        {/* <button onclick="scrollWin()" style="position:fixed">Scroll to 200 horizontally!</button><br></br>  */}
+        <BrowserRouter>
+        
+        
+        <div className="display"> 
             <ul>
+              <Link to="/">Home</Link>
+              <Technology />
+              <br></br>
+            <br></br>
+            <br></br>
+            </ul>
 
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-            
-            <br></br>
-            <br></br>
-            
-              <li>
-                <Link to="/Technology">Tech</Link>
-                <Technology/>
-              </li>
-        
             <br></br>
             <br></br>
             <br></br>
             
-              <li>
-                <Link to="/NewInfo">New Info</Link>
-              </li>
-            
+
+            <ul>
+              <Link to="/Technology">Tech</Link>
+              <Technology />
+              <br></br>
             <br></br>
             <br></br>
+            </ul>
+
             <br></br>
-            
-            
-              <li>
-                <Link to="/ContactInfo">Contact Info</Link>
-              </li>
-            
             <br></br>
             <br></br>
 
-         </ul>
-          </div> 
+            <ul>
+              <Link to="/NewInfo">New Info</Link>
+              <br></br>
+            <br></br>
+            <br></br>
+            </ul>
 
-         <div className="display">
-              <Routes>
-          <Route path="/ContactInfo" element={
-            <ContactInfo/>
-            } />
-        
+            <br></br>
+            <br></br>
+            <br></br>
+
+            <ul>
+              <Link to="/ContactInfo">Contact Info</Link>
+              <br></br>
+            <br></br>
+            <br></br>
+            </ul>
+
+            <br></br>
+            <br></br>
+        </div>
+  
           
-                <Route path="/NewInfo" element={
-            <NewInfo/>
-            } />
+          <div className="display">
+         
+            <Routes>
+              <Route path="/ContactInfo" element={
+                <ContactInfo />
+              } />
 
-            
+
+              <Route path="/NewInfo" element={
+                <NewInfo />
+              } />
+
+
               <Route path="/Technology" element={
-            <Technology/>
-            } />
-            
-        </Routes>
+                <Technology />
+              } />
+
+            </Routes>
+          
+          </div>
+        </BrowserRouter>
+
       
-        </div>  
-  </BrowserRouter>   
-              
-
-<Slider>
-  <LeftArrow></LeftArrow>    
-      <Box></Box>
-  <RightArrow></RightArrow>
-</Slider>
-</Container>
-
-</div>
-   );
+  
+    </Container>
+    
+  );
 };
 
 export default App;
