@@ -10,23 +10,24 @@ import GatsbyLink from 'gatsby-link';
 //For styled main container
 const Container = styled.div`
 background-color:white;
-height: 3000px;
+height: 1000px;
 width:300px;
 text-align: center;
-// position: fixed;
 `;
 
 
 //For wrapper
 // eslint-disable-next-line
 const Wrapper = styled.div`
-background-color:white;
-margin-left: 200px;
+background-color:black;
 margin-top:20px;
 display:flex;
-width:1500px;
-height:700px;
+width:800px;
+height:100px;
+margin-left:500px;
+margin-bottom:2500px;
 `;
+
 
 // eslint-disable-next-line
 const Navbar = styled.div`
@@ -35,10 +36,8 @@ width:1200px;
 height:100px;
 padding:10px 10px;
 display:flex;
-
 margin-left:400px;
 margin-right:1100px;
-
 `;
 
 const Box = styled.div`
@@ -47,10 +46,8 @@ border-color:white;
 background-color:white;
 width:900px;
 height:500px;
-
 // margin-bottom:400px;
 // margin-left:700px;
-
 `;
 
 //For Arrow styling
@@ -107,19 +104,16 @@ const Slider = styled.div`
 
 const App = () => {
   return (
+    <div>
   <Container>
     <h1>Neurosense</h1>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-          </button>
-        {/* <button onclick="scrollWin()" style="position:fixed">Scroll to 200 horizontally!</button><br></br>  */}
+    
         <BrowserRouter>
-        
         
         <div className="display"> 
             <ul>
               <Link to="/">Home</Link>
-              <Technology />
+              
               <br></br>
             <br></br>
             <br></br>
@@ -128,16 +122,17 @@ const App = () => {
             <br></br>
             <br></br>
             <br></br>
-            
+            <br></br>
 
             <ul>
               <Link to="/Technology">Tech</Link>
-              <Technology />
+             
               <br></br>
             <br></br>
             <br></br>
-            </ul>
+           </ul>
 
+            <br></br>
             <br></br>
             <br></br>
             <br></br>
@@ -152,8 +147,9 @@ const App = () => {
             <br></br>
             <br></br>
             <br></br>
+            <br></br>
 
-            <ul>
+            {/* <ul>
               <Link to="/ContactInfo">Contact Info</Link>
               <br></br>
             <br></br>
@@ -162,15 +158,17 @@ const App = () => {
 
             <br></br>
             <br></br>
+            <br></br> */}
         </div>
   
           
           <div className="display">
          
             <Routes>
-              <Route path="/ContactInfo" element={
+
+              {/* <Route path="/ContactInfo" element={
                 <ContactInfo />
-              } />
+              } /> */}
 
 
               <Route path="/NewInfo" element={
@@ -187,12 +185,15 @@ const App = () => {
           </div>
         </BrowserRouter>
 
-      
-  
     </Container>
-    
+
+<footer>
+<div class ="splitter">
+    <ContactInfo/>
+    </div>
+    </footer>
+    </div>
   );
 };
 
 export default App;
-

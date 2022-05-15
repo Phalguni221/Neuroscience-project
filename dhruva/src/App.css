@@ -10,7 +10,7 @@ a {
   border-bottom-left-radius: 10px;
   background-color: skyblue;
   transition: all 1s;
-  margin-right: 400px;
+  margin-right: 1000px;
 }
 a:hover {
   transform: scale(0.8);
@@ -63,8 +63,8 @@ h1 {
 h2 {
   padding: 40px 20px;
   font-size: 40px;
-  color: goldenrod;
-  font: 30px Arial, sans-serif;
+  color: white;
+  font: 30px Helvetica;
   text-align: center;
   margin-right: 600px;
 }
@@ -81,14 +81,12 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 0.8m;
- 
+  width: 1em;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: black;
-  outline: 1px solid #eee;
-
+  background-color: lightgray;
+  outline: px solid #eee;
 }
 
 img {
@@ -107,11 +105,17 @@ p {
   width: 1920px;
 }
 
-li {
-  color: black;
-  width: 200px;
-  margin-right: 300px;
+h3 {
+  color: white;
+  width: 500px;
+  margin-top: 10px;
+  margin-left: 700px;
   text-align: center;
+  font: 18px Helvetica;
+}
+
+.splitter {
+  background-color: limegreen;
 }
 
 /*# sourceMappingURL=App.css.map */

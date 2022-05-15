@@ -15,11 +15,12 @@ position: fixed;
 // eslint-disable-next-line
 const Wrapper = styled.div`
 background-color:black;
-margin-left: 200px;
 margin-top:20px;
 display:flex;
-width:1500px;
-height:700px;
+width:800px;
+height:100px;
+margin-left:500px;
+margin-bottom:2500px;
 `;
 
 // eslint-disable-next-line
@@ -93,31 +94,28 @@ border-color:white;
 background-color:white;
 width:800px;
 height:500px;
-
-margin-bottom:6000px;
-margin-left:1000px;
+margin-bottom:10000px;
+margin-left:3000px;
 
 `;
 
-export default function NewInfo ({location}) {
+export default function NewInfo () {
   return (
-  
-    <html>
-    
-        <Box>
+      <div> 
+         <Wrapper>
+          <h2>New Info</h2>
+          </Wrapper>
+
       <p>
-          <li>
-              Email address: Dhruva221@gmail.com
-          </li>
           <li>
               Phone number; 732-259-1884
           </li>
         <li>LinkedIn: https://www.linkedin.com/in/sriya-bhamidipati/
         </li>
       </p>
-      </Box>
       
-    </html>
+      </div>
+  
   
   
   )
