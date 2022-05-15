@@ -91,8 +91,8 @@ h1 {
 h2 {
   padding: 40px 20px;
   font-size: 40px;
-  color: goldenrod;
-  font: 30px Arial, sans-serif;
+  color: white;
+  font: 30px Helvetica;
   text-align: center;
   margin-right: 600px;
 }
@@ -113,8 +113,8 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #666;
-  outline: 1px solid #eee;
+  background-color: lightgray;
+  outline: px solid #eee;
 }
 
 img {
@@ -126,17 +126,24 @@ img {
 hr {
   color:black;
 }
+
 p {
   text-align: center;
   color: black;
   width: 1920px;
 }
 
-li {
-  color: black;
-  width: 200px;
-  margin-right: 300px;
+h3 {
+  color: white;
+  width: 500px;
+  margin-top:10px;
+ margin-left:700px;
   text-align: center;
+  font: 18px Helvetica;
+}
+
+.splitter {
+  background-color:limegreen;
 }
 
 /*# sourceMappingURL=App.css.map */
