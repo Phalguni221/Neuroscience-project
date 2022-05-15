@@ -106,14 +106,6 @@ export default function Technology () {
           <Wrapper>
           <h2>Technology</h2>
           </Wrapper>
-      <p>
-         
-          <li>
-              Phone number; 732-259-1884
-          </li>
-        <li>LinkedIn: https://www.linkedin.com/in/sriya-bhamidipati/
-        </li>
-      </p>
       </div>
      
    

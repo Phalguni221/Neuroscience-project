@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import ContactInfo from './pages/ContactInfo';
 import NewInfo from "./pages/NewInfo";
 import Technology from "./pages/Technology";
+import Login from "./pages/Login";
 import GatsbyLink from 'gatsby-link';
 
 
@@ -106,7 +107,8 @@ const App = () => {
   return (
     <div>
   <Container>
-    <h1>Neurosense</h1>
+    <h1>Neurosense: Where Neuroscience Makes Sense</h1>
+   
     
         <BrowserRouter>
         
@@ -148,6 +150,13 @@ const App = () => {
             <br></br>
             <br></br>
             <br></br>
+
+            <ul>
+              <Link to="/Login">User Login</Link>
+              <br></br>
+            <br></br>
+            <br></br>
+            </ul>
 
             {/* <ul>
               <Link to="/ContactInfo">Contact Info</Link>
