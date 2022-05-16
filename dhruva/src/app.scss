@@ -1,7 +1,7 @@
 a {
   color: palegoldenrod;
   cursor: pointer;
-  position: fixed;
+  position: absolute;
   font-size: 20px;
   width: 200px;
   height: 60px;
@@ -74,7 +74,8 @@ a:after {
 
 br {
   display: block;
-  margin: 70px 0;
+  margin: 1070px 0;
+  
 } 
 
 h1 {
@@ -134,6 +135,7 @@ p {
   text-align: center;
   color: black;
   width: 1920px;
+  
 }
 
 h3 {
