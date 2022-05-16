@@ -1,14 +1,14 @@
 a {
   color: palegoldenrod;
   cursor: pointer;
-  position: fixed;
+  position: absolute;
   font-size: 20px;
   width: 200px;
   height: 60px;
   padding: 20px 20px 30px;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
-  background-color: skyblue;
+  background-color: rgb(75, 141, 226);
   transition: all 1s;
   margin-right: 1000px;
 }
@@ -47,26 +47,27 @@ a:after {
 
 br {
   display: block;
-  margin: 70px 0;
+  margin: 1070px 0;
 }
 
 h1 {
-  padding: 40px 20px;
+  padding: 20px 20px;
   font-size: 40px;
   color: black;
+  width: 1000px;
   font: 40px Arial, sans-serif;
   text-align: center;
   text-shadow: 2px 2px 5px blue;
-  margin-left: 1000px;
+  margin-left: 500px;
 }
 
 h2 {
-  padding: 40px 20px;
-  font-size: 40px;
+  font-size: 20px;
   color: white;
   font: 30px Helvetica;
   text-align: center;
-  margin-right: 600px;
+  margin-left: 300px;
+  margin-bottom: 600px;
 }
 
 h3 {

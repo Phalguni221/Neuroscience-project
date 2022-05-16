@@ -4,8 +4,14 @@ import styled from 'styled-components';
 import ContactInfo from './pages/ContactInfo';
 import NewInfo from "./pages/NewInfo";
 import Technology from "./pages/Technology";
+import Login from "./pages/Login";
+import BrainGames from "./pages/BrainGames";
 import GatsbyLink from 'gatsby-link';
-
+import ReactLoading from "react-loading";
+import React, { useState, useEffect } from 'react'
+import logo from './logo.svg';
+import './App.css';
+import Loading from './pages/Loading'
 
 //For styled main container
 const Container = styled.div`
@@ -102,11 +108,22 @@ const Slider = styled.div`
 `;
 
 
+
 const App = () => {
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 4000)
+  }, [])
+
   return (
+    <>
+       {loading === false ? (
     <div>
+     
   <Container>
-    <h1>Neurosense</h1>
+    <h1>Neurosense: Where Neuroscience Makes Sense</h1>
+   
     
         <BrowserRouter>
         
@@ -149,8 +166,8 @@ const App = () => {
             <br></br>
             <br></br>
 
-            {/* <ul>
-              <Link to="/ContactInfo">Contact Info</Link>
+            <ul>
+              <Link to="/Login">User Login</Link>
               <br></br>
             <br></br>
             <br></br>
@@ -158,7 +175,19 @@ const App = () => {
 
             <br></br>
             <br></br>
-            <br></br> */}
+            <br></br>
+            <br></br>
+
+             <ul>
+              <Link to="/BrainGames">Brain Games</Link>
+              <br></br>
+            <br></br>
+            <br></br>
+            </ul>
+
+            <br></br>
+            <br></br>
+            <br></br> 
         </div>
   
           
@@ -166,9 +195,9 @@ const App = () => {
          
             <Routes>
 
-              {/* <Route path="/ContactInfo" element={
-                <ContactInfo />
-              } /> */}
+            <Route path="/Login" element={
+                <Login />
+              } />
 
 
               <Route path="/NewInfo" element={
@@ -178,6 +207,10 @@ const App = () => {
 
               <Route path="/Technology" element={
                 <Technology />
+              } />
+
+              <Route path="/BrainGames" element={
+                <BrainGames />
               } />
 
             </Routes>
@@ -193,7 +226,12 @@ const App = () => {
     </div>
     </footer>
     </div>
-  );
-};
+  ) : (
+    <Loading/>
+  )}
+</>
+  )
+}
+
 
 export default App;

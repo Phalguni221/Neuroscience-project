@@ -1,6 +1,7 @@
 import React from 'react';
 // import Layout from '../components/Layout'
 import styled from 'styled-components'
+import ContactInfo from './ContactInfo';
 
 //For styled main container
 const Container = styled.div`
@@ -105,18 +106,8 @@ export default function NewInfo () {
          <Wrapper>
           <h2>New Info</h2>
           </Wrapper>
-
-      <p>
-          <li>
-              Phone number; 732-259-1884
-          </li>
-        <li>LinkedIn: https://www.linkedin.com/in/sriya-bhamidipati/
-        </li>
-      </p>
-      
       </div>
-  
-  
+
   
   )
 
