@@ -1,7 +1,6 @@
 #### 2022-05-16
-
-#### 2022-05-16
-
+- Added Loading Page
+- Neuroscience
 - Added login button
 - Neuroscience Project
 - Front-end Basics
@@ -13,10 +12,4 @@
 - dhruva
 - Nueroscience
 - Dhruva
-- Navbar changes
-- Added node modules to back-end
-- back-end-added
-- Dhruva
-- Dhruva
-- Delete navbar.html
-- Dhruva
+
