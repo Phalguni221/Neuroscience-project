@@ -16,12 +16,12 @@ position: fixed;
 // eslint-disable-next-line
 const Wrapper = styled.div`
 background-color:black;
-margin-top:20px;
+// margin-top:20px;
 display:flex;
 width:800px;
 height:100px;
 margin-left:500px;
-margin-bottom:2500px;
+// margin-bottom:4000px;
 `;
 
 // eslint-disable-next-line
@@ -102,11 +102,10 @@ margin-left:3000px;
 
 export default function NewInfo () {
   return (
-      <div> 
          <Wrapper>
           <h2>New Info</h2>
           </Wrapper>
-      </div>
+     
 
   
   )

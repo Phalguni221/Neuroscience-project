@@ -6,6 +6,7 @@ import NewInfo from "./pages/NewInfo";
 import Technology from "./pages/Technology";
 import Login from "./pages/Login";
 import BrainGames from "./pages/BrainGames";
+import Home from "./pages/Home";
 import GatsbyLink from 'gatsby-link';
 import ReactLoading from "react-loading";
 import React, { useState, useEffect } from 'react'
@@ -26,12 +27,12 @@ text-align: center;
 // eslint-disable-next-line
 const Wrapper = styled.div`
 background-color:black;
-margin-top:20px;
+// margin-top:20px;
 display:flex;
 width:800px;
 height:100px;
 margin-left:500px;
-margin-bottom:2500px;
+// margin-bottom:4000px;
 `;
 
 
@@ -124,8 +125,38 @@ const App = () => {
   <Container>
     <h1>Neurosense: Where Neuroscience Makes Sense</h1>
    
-    
         <BrowserRouter>
+
+        <div className="display">
+
+            <Routes>
+        
+        
+            <Route path="/" element={
+                <Home />
+              } />
+
+            <Route path="/Login" element={
+                <Login />
+              } />
+
+
+              <Route path="/NewInfo" element={
+                <NewInfo />
+              } />
+
+
+              <Route path="/Technology" element={
+                <Technology />
+              } />
+
+              <Route path="/BrainGames" element={
+                <BrainGames />
+              } />
+
+            </Routes>
+          
+          </div>
         
         <div className="display"> 
             <ul>
@@ -191,7 +222,7 @@ const App = () => {
         </div>
   
           
-          <div className="display">
+          {/* <div className="display">
          
             <Routes>
 
@@ -215,7 +246,7 @@ const App = () => {
 
             </Routes>
           
-          </div>
+          </div> */}
         </BrowserRouter>
 
     </Container>
