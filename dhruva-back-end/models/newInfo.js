@@ -10,3 +10,4 @@ let NewInfoSchema = new mongoose.Schema({
 
 NewInfoSchema.methods.showEstablished = function() {}
   
+module.exports = mongoose.model('NewInfo', NewInfoSchema)
