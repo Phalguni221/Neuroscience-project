@@ -15,13 +15,14 @@ position: fixed;
 // eslint-disable-next-line
 const Wrapper = styled.div`
 background-color:black;
-margin-top:20px;
+// margin-top:20px;
 display:flex;
 width:800px;
 height:100px;
 margin-left:500px;
-margin-bottom:2500px;
+// margin-bottom:4000px;
 `;
+
 // eslint-disable-next-line
 const Navbar = styled.div`
 background-color:black;
@@ -88,30 +89,28 @@ const Slider = styled.div`
 `;
 
 const Box = styled.div`
-border-radius:10px;
 border-color:white;
 background-color:white;
-width:800px;
+position:absolute;
+width:1000px;
 height:500px;
-
-margin-bottom:10000px;
-margin-left:1000px;
+margin-right:800px;
+margin-left:900px;
+// margin-bottom:10000px;
+// margin-left:1000px;
 
 `;
 
 
 export default function Technology () {
   return (
-        <div>
-          <Wrapper>
+    <div>
+     <Wrapper>
           <h2>Technology</h2>
-          </Wrapper>
-      </div>
-     
-   
+      </Wrapper>
+    </div>
   
-  
-  
+
   )
 
    }
