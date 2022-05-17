@@ -5,7 +5,7 @@ db.NewInfo.create([
     {
      title: 'Case Files Nuerology',
       author: 'Helano Brilhante',
-      datePublished: 5/16/2022,
+      date: 5/16/2022,
       link: 'https://www.academia.edu/38562705/Case_Files_Neurology?email_work_card=title'
     }
 ])
