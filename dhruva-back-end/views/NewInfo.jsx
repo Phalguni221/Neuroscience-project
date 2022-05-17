@@ -1,32 +1,29 @@
 const React = require('react');
 const Def = require('./default')
 
-export default function NewInfo(data) {
-    let NewInfoFormatted = data.NewInfo?.map((NewInfo) => {
+export default function newinfo(data) {
+    let newinfoFormatted = data.newinfo?.map((newinfo) => {
       return (
           <div>
         <body>
-        <div className="col-sm-6">
             
-          <h2>
-            <p>
-              {NewInfo.title}
-              </p>
-          </h2>
+               <h1>
+              {newinfo.title}
+              </h1>
+        
 
           <p>
-            {NewInfo.author}
+            {newinfo.author}
           </p>
 
-          {/* <p>
-            Located in {NewInfo.date}
-         </p> */}
+          <p>
+            Located in {newinfo.date}
+         </p>
 
             <p>   
-            {NewInfo.link}
+            {newinfo.link}
             </p> 
-        
-        </div>
+
         </body>
         </div>
     
@@ -34,12 +31,8 @@ export default function NewInfo(data) {
       })
       return (
          <Def>
-            <main>
-                <body>
-            <h1>NewInfo</h1>
-            {NewInfoFormatted} 
-                </body>
-            </main>
+            <h1>newinfo</h1>
+            {newinfoFormatted}
          </Def>
         
       
@@ -47,3 +40,5 @@ export default function NewInfo(data) {
     )
     
     }
+
+module.exports = newinfo

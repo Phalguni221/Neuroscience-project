@@ -6,6 +6,6 @@ mongoose.connect(process.env.MONGO_URI, {
   useUnifiedTopology: true
 })
 
-module.exports.NewInfo = require('./Tech')
+module.exports.NewInfo = require('./newinfo')
 
-module.exports.Tech = require('./NewInfo')
+module.exports.Tech = require('./Tech')

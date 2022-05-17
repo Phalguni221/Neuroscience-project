@@ -1,10 +1,10 @@
 const router = require('express').Router()
 const db = require('../models')
 
-router.get('/NewInfo', (req, res) => {
-  db.newinfo.find()
+router.post('/newinfo', (req, res) => {
+  db.NewInfo.find()
   .then((newinfo) => {
-res.render('NewInfo/index', { NewInfo })
+res.render('newinfo/server', { newinfo })
   })
     .catch(err => {
       console.log(err) 
@@ -12,10 +12,10 @@ res.render('NewInfo/index', { NewInfo })
     })
 })
 
-router.get('/technology', (req, res) => {
+router.get('/tech', (req, res) => {
   db.Tech.find()
   .then((tech) => {
-res.render('technology/index', { tech })
+res.render('tech', { tech })
   })
     .catch(err => {
       console.log(err) 
