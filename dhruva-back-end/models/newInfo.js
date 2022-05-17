@@ -1,13 +1,15 @@
 
 const mongoose = require('mongoose')
 
-let NewInfoSchema = new mongoose.Schema({
+const newinfoSchema = new mongoose.Schema({
     title: { type: String, default: 'Anonymous' },
     author: { type: String, default: 'Anonymous' },
     date: { type: Number, required: true },
     link: { type: String, default: '' }
 })
 
-NewInfoSchema.methods.showEstablished = function() {}
+newinfoSchema.methods.showEstablished = function() {
+return `${this.title} by ${this.author}, published ${this.date}. Link to article: ${this.link}.`
+}
   
-module.exports = mongoose.model('NewInfo', NewInfoSchema)
+module.exports = mongoose.model('NewInfo', newinfoSchema)

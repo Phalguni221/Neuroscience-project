@@ -21,10 +21,23 @@ app.get('/NewInfo', (req, res) => {
   res.render('NewInfo')
 })
 
+app.post('/NewInfo', (req,res) => {
+  res.render('NewInfo')
+})
+
+
+app.get('/tech', (req, res) => {
+  res.render('Tech')
+})
+
+app.post('/tech', (req,res) => {
+  res.render('Tech')
+})
+
+
 // app.post('/Technnology', (req,res) => {
 //     res.render('Technology')
 //   })
-  
 
 //Listen for Connections
 app.listen(process.env.PORT)
