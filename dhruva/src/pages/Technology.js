@@ -92,8 +92,8 @@ const Box = styled.div`
 border-radius:10px;
 border-color:white;
 background-color:white;
-width:1000px;
-height:1000px;
+width:200px;
+height:200px;
 margin-right:600px;
 margin-left:500px;
 // margin-bottom:10000px;
@@ -109,6 +109,8 @@ export default function Technology () {
           <h2>Technology</h2>
       </Wrapper>
     </div>
+    
+
   )
 
    }
