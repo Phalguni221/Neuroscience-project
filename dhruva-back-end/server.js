@@ -17,7 +17,7 @@ app.use(methodOverride('_method'))
 
 app.use('/articles', require('./controllers/articles'))
 
-app.get('/NewInfo', (req, res) => {
+app.get('/', (req, res) => {
   res.render('NewInfo')
 })
 
@@ -34,11 +34,21 @@ app.post('/tech', (req,res) => {
   res.render('Tech')
 })
 
-
+app.get('/login', (req, res) => {
+  res.render('login')
+})
 // app.post('/Technnology', (req,res) => {
 //     res.render('Technology')
 //   })
 
+mongoose
+  .connect("mongodb://localhost:27017/neurostyle") //for secret key
+  .then(() => console.log("DB Connection Successfull!"))  //.then for prom
+  .catch((err) => {
+    console.log(err); //For view errors
+  });
+
 //Listen for Connections
-app.listen(process.env.PORT)
-console.log("Backend server is running!")
+app.listen(process.env.PORT || 3400, () => {
+  console.log("Backend server is running!");
+});

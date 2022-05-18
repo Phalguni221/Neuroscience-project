@@ -4,7 +4,7 @@ const mongoose = require('mongoose')
 const newinfoSchema = new mongoose.Schema({
     title: { type: String, default: 'Anonymous' },
     author: { type: String, default: 'Anonymous' },
-    date: { type: Number, required: true },
+    date: { type: String, required: true },
     link: { type: String, default: '' }
 })
 
