@@ -1,8 +1,8 @@
 const router = require('express').Router()
-const db = require('../models')
+const db = require('../models/newinfo')
 
-router.post('/newinfo', (req, res) => {
-  db.NewInfo.find()
+router.get('/', (req, res) => {
+  newinfo.find()
   .then((newinfo) => {
 res.render('newinfo/server', { newinfo })
   })

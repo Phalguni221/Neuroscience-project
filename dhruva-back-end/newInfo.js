@@ -1,7 +1,6 @@
-const db = require('../models')
+const db = require('./models')
 
-db.NewInfo.create([
-
+[
     {
      title: 'Case Files Nuerology',
       author: 'Helano Brilhante',
@@ -45,20 +44,23 @@ db.NewInfo.create([
       },
       
       {
-        title: 'Sarvanana Bhavan',
-        author: 'Edison',
-        date: 'NJ',
-        cuisines: 'Indian, vegetarian',
-        pic: '/Images/Sarvanana Bhavan.png',
-        founded:1981
-      },  {
+        title: 'Prospective quantitative imaging study by magnetisation transfer for appearance of perilesional gliosis in solitary cerebral cysticercal lesion',
+        author: 'Aaron de Souza',
+        date: '2010',
+        link:"https://www.academia.edu/32210659/Prospective_quantitative_imaging_study_by_magnetisation_transfer_for_appearance_of_perilesional_gliosis_in_solitary_cerebral_cysticercal_lesion?email_work_card=title"
+      }
+    ]  
+      
+      {
         title: 'Veggie Grill',
         author: 'San Jose',
         date: 'CA',
         cuisines: 'American, vegan',
         pic: '/Images/Veggie Grill.png',
         founded:2006
-      }, {
+      }, 
+      
+      {
         title: 'Panda Express',
         author: 'Los Angeles',
         date: 'CA',
@@ -66,7 +68,8 @@ db.NewInfo.create([
         pic: '/Images/Panda Express.png',
         founded:1983
       }
-    ])
+    ]
+
 .then(() => {
     console.log('Success!')
     process.exit()
