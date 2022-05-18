@@ -2,6 +2,7 @@ import React from 'react';
 // import Layout from '../components/Layout'
 import styled from 'styled-components'
 import User from './User'
+import jQuery from 'jquery'
 
  //For styled main container
  const Container = styled.div`
