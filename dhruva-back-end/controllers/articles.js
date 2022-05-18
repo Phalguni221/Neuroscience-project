@@ -34,9 +34,9 @@ res.render('tech', { tech })
 //   })
 // })
 
-// router.get('/new', (req, res) => {
-//   res.render('places2/new')
-// })
+router.get('/login', (req, res) => {
+  res.render('login')
+})
 
 // router.get('/:id', (req, res) => {
 //   db.Place.findById(req.params.id)
