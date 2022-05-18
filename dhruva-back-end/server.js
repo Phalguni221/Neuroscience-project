@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
   res.render('NewInfo')
 })
 
-app.post('/NewInfo', (req,res) => {
+app.post('/', (req,res) => {
   res.render('NewInfo')
 })
 

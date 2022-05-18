@@ -8,4 +8,4 @@ mongoose.connect(process.env.MONGO_URI, {
 
 module.exports.NewInfo = require('./newinfo')
 
-module.exports.Tech = require('./Tech')
+module.exports.Tech = require('./tech')
