@@ -1,10 +1,12 @@
 const router = require('express').Router()
-const db = require('../models/newinfo')
+const newinfo = require('../models/newinfo')
+const tech = require('../models/tech')
 
 router.get('/', (req, res) => {
-  newinfo.find()
+  newinfo.find({})
   .then((newinfo) => {
-res.render('newinfo/server', { newinfo })
+    console.log("neuro")
+res.render('newinfo', { newinfo })
   })
     .catch(err => {
       console.log(err) 
@@ -13,8 +15,9 @@ res.render('newinfo/server', { newinfo })
 })
 
 router.get('/tech', (req, res) => {
-  db.Tech.find()
+  tech.find({})
   .then((tech) => {
+    console.log("neuro")
 res.render('tech', { tech })
   })
     .catch(err => {

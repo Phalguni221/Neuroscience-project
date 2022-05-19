@@ -18,7 +18,7 @@ app.use(methodOverride('_method'))
 app.use('/articles', require('./controllers/articles'))
 
 app.get('/', (req, res) => {
-  res.render('NewInfo')
+  require('./controllers/articles')
 })
 
 app.post('/', (req,res) => {
@@ -27,7 +27,7 @@ app.post('/', (req,res) => {
 
 
 app.get('/tech', (req, res) => {
-  res.render('Tech')
+  require('./controllers/articles')
 })
 
 app.post('/tech', (req,res) => {

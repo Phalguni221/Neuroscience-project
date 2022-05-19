@@ -10,7 +10,7 @@ function Def (html) {
             </head>
              <body>
                 {html.children}
-                <div class="content"></div>
+              
             </body> 
 
             <br></br>
