@@ -1,16 +1,23 @@
 const React = require('react');
 const Def = require('./default')
+import styled from 'styled-components';
 
-export default function newinfo(data) {
-    let newinfoFormatted = data.newinfo?.map((newinfo) => {
-      return (
-          <div>
-        <body>
-            
-               <h1>
-              {newinfo.title}
-              </h1>
-        
+const Container = styled.div`
+color:blue;
+`;
+
+function newinfo(data) {
+  console.log(data)
+  console.log("hello")
+
+  let newinfoFormatted = data.newinfo?.map((newinfo) => {
+    return (
+      <div>
+        <Container>
+          <h1>
+            {newinfo.title}
+          </h1>
+
 
           <p>
             {newinfo.author}
@@ -18,27 +25,26 @@ export default function newinfo(data) {
 
           <p>
             Located in {newinfo.date}
-         </p>
+          </p>
 
-            <p>   
+          <p>
             {newinfo.link}
-            </p> 
+          </p>
+          </Container>
+      </div>
 
-        </body>
-        </div>
-    
     )
-      })
-      return (
-         <Def>
-            <h1>newinfo</h1>
-            {newinfoFormatted}
-         </Def>
-        
-      
-      
-    )
-    
-    }
+  })
+  return (
+    <Def>
+      <h1>newinfo</h1>
+      {newinfoFormatted}
+    </Def>
+
+
+
+  )
+
+}
 
 module.exports = newinfo

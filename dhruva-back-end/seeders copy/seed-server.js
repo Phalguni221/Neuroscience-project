@@ -1,6 +1,6 @@
 const db = require('../models')
 
-db.Tech.create([
+db.Server.create([
     {
       title: 'Using Virtual Reality for Anger Control',
       author: 'Mary Ann Lieber, Inc',
@@ -35,14 +35,29 @@ db.Tech.create([
         date: 'May 1, 2022',
         link:"https://neurosciencenews.com/high-static-magnetic-field-anxiety-20503/"
       },
-
-      {
-        title: 'Cell Signaling in the Brain',
-        author: 'Ruairi J Mackenzie',
-        date: 'May 11, 2022',
-        link:"https://www.technologynetworks.com/neuroscience/infographics/cell-signaling-in-the-brain-361493"
-      },
       
+      {
+        title: 'Sarvanana Bhavan',
+        author: 'Edison',
+        date: 'NJ',
+        cuisines: 'Indian, vegetarian',
+        pic: '/Images/Sarvanana Bhavan.png',
+        founded:1981
+      },  {
+        title: 'Veggie Grill',
+        author: 'San Jose',
+        date: 'CA',
+        cuisines: 'American, vegan',
+        pic: '/Images/Veggie Grill.png',
+        founded:2006
+      }, {
+        title: 'Panda Express',
+        author: 'Los Angeles',
+        date: 'CA',
+        cuisines: 'Chinese, gourmet',
+        pic: '/Images/Panda Express.png',
+        founded:1983
+      }
     ])
 .then(() => {
     console.log('Success!')
