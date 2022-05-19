@@ -28,7 +28,7 @@ db.Tech.create([
         date: 'March 25, 2022',
         link:"https://neurosciencenews.com/parkinsons-ai-robotics-20259/"
       },
-      
+
       {
         title: 'High Static Magnetic Field Can Relieve Anxiety',
         author: 'Chinese Academy of Science',
@@ -43,6 +43,19 @@ db.Tech.create([
         link:"https://www.technologynetworks.com/neuroscience/infographics/cell-signaling-in-the-brain-361493"
       },
       
+      {
+        title: 'AI Predicts Infant Age and Gender Based on Temperament',
+        author: 'Ruairi J Mackenzie',
+        date: 'May 15, 2022',
+      link:"https://neurosciencenews.com/ai-age-gender-baby-20589/"
+      },
+
+      {
+        title: 'New Brain Stimulation Treatments Help Smokers Quit',
+        author: 'Society for the Study of Addiction',
+        date: 'April 26, 2022',
+        link:"https://neurosciencenews.com/nibs-smoking-20474/"
+      }
     ])
 .then(() => {
     console.log('Success!')
