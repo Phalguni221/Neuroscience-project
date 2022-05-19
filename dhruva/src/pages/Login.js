@@ -94,9 +94,9 @@ margin-left:500px;
  border-color:white;
  background-color:white;
  width:500px;
- height:500px;
+ height:400px;
  margin-bottom:1000px;
- margin-left:1000px;
+ margin-left:650px;
 
  `;
 

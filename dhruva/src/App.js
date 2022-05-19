@@ -251,10 +251,8 @@ const App = () => {
 
     </Container>
 
-<footer>
-<div class ="splitter">
+    <footer>
     <ContactInfo/>
-    </div>
     </footer>
     </div>
   ) : (
