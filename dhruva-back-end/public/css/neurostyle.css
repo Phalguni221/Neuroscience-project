@@ -1,22 +1,24 @@
 body {
-    background-color:white;
+    background-color:palegoldenrod;
 }
 
 h1 {
     text-align: center;
     color:blue;
+    font-size:30px;
 }
 
 p {
     justify-content: center;
     text-align: center;
     color:blue;
+    font-size:20px;
 }
 
 .column {
-    float: left;
-    width: 17.33%;
-    padding: 11.7px;
+    float:left;
+    width: 20.33%;
+    padding: 40.7px;
   }
 
   body::-webkit-scrollbar {

@@ -1,10 +1,5 @@
 const React = require('react');
 const Def = require('./default')
-import styled from 'styled-components';
-
-const Container = styled.div`
-color:blue;
-`;
 
 function newinfo(data) {
   console.log(data)
@@ -13,7 +8,7 @@ function newinfo(data) {
   let newinfoFormatted = data.newinfo?.map((newinfo) => {
     return (
       <div>
-        <Container>
+       <div class="column">
           <h1>
             {newinfo.title}
           </h1>
@@ -30,7 +25,7 @@ function newinfo(data) {
           <p>
             {newinfo.link}
           </p>
-          </Container>
+      </div> 
       </div>
 
     )
