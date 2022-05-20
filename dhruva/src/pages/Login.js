@@ -1,7 +1,7 @@
 import React from 'react';
 // import Layout from '../components/Layout'
 import styled from 'styled-components'
-import User from './User'
+import User from './User.js'
 import jQuery from 'jquery'
 
  //For styled main container
@@ -100,10 +100,30 @@ margin-left:500px;
 
  `;
 
- export default function Login () {
+ const divStyle = styled.div`
+ "-webkit-text-security = circle";
+      margin-left: -30px; 
+        cursor: pointer
+ `;
 
+ export default function Login () {
    return (
      <div>
+       <head>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"></link>
+       </head>
+{/* 
+      <script>
+    // toggle the type attribute
+      const togglePassword = document.querySelector('#togglePassword');
+      const password = document.querySelector('#id_password');
+      togglePassword.addEventListener('click', function (e) {
+        const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+        password.setAttribute('type', type);
+    // toggle the eye slash icon
+       this.classList.toggle('fa-eye-slash');
+              });
+       </script> */}
       <Wrapper>
           <h2>User Login</h2>
       </Wrapper>
@@ -114,21 +134,33 @@ margin-left:500px;
         <br></br>
 
     <form method ="GET" action="User.js">
+
    <label for="fname">First name:</label><br/>
 
    <input type="text" id="fname" name="fname" />
+
+   <br></br>
    <br></br>
 
    <label for="lname">Last name:</label><br/>
    <input type="text" id="lname" name="lname" />
+
+   <br></br>
    <br></br>
 
    <label for="username">Username:</label><br/>
-   <input type="text" id="username" name="username"  required="true"/>
+   <input type="text" id="username" name="username" placeholder="Enter your Username"   required="true"/>
+
+   <br></br>
    <br></br>
 
-   <label for="password">Password:</label><br/>
-   <input type="text" id="password" name="password"  required="true"/>
+
+   <label for="userPassword">Password:</label><br/>
+
+   <input type="password" id="password"  placeholder="Enter your Password" 
+   name="password"  minlength="3"  maxlength="20"></input> 
+       
+   <br></br>
    <br></br>
 
    <input type="submit" value="Submit"></input>
@@ -136,8 +168,5 @@ margin-left:500px;
    </Box>
    </div>
   
-  
-
-   
-         )
+   )
    }

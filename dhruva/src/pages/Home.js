@@ -89,15 +89,13 @@ const Slider = styled.div`
 `;
 
 const Box = styled.div`
-border-radius:10px;
+border-radius:25px;
 border-color:white;
 background-color:white;
-width:1000px;
-height:1000px;
-margin-right:600px;
-margin-left:500px;
-// margin-bottom:10000px;
-// margin-left:1000px;
+width:500px;
+height:400px;
+margin-bottom:1000px;
+margin-left:650px;
 
 `;
 
@@ -107,6 +105,10 @@ export default function Technology () {
 <Wrapper>
 <h2>Home</h2>
 </Wrapper>
+<Box>
+  <h1>Welcome to the Site!</h1>
+</Box>
+
 </div>
     )
     }
