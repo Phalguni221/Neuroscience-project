@@ -11,6 +11,8 @@ techSchema.methods.showEstablished = function() {}
   
 module.exports = mongoose.model('tech', techSchema, 'tech')
 
+
+
 // const mongoose = require('mongoose')
 
 // const techSchema = new mongoose.Schema({
