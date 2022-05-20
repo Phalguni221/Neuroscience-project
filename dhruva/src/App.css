@@ -1,7 +1,7 @@
 a {
   color: palegoldenrod;
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   font-size: 20px;
   width: 200px;
   height: 30px;
@@ -57,7 +57,7 @@ h1 {
   font: 40px Arial, sans-serif;
   text-align: center;
   text-shadow: 2px 2px 5px blue;
-  margin-left: 400px;
+  margin-left: 70px;
 }
 
 h2 {
@@ -103,6 +103,17 @@ p {
   text-align: center;
   color: black;
   width: 1920px;
+}
+
+title {
+  padding: 20px 20px;
+  font-size: 40px;
+  color: black;
+  width: 1000px;
+  font: 40px Arial, sans-serif;
+  text-align: center;
+  text-shadow: 2px 2px 5px blue;
+  margin-left: 100px;
 }
 
 h3 {
