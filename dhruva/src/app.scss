@@ -2,6 +2,7 @@ a {
   color: palegoldenrod;
   cursor: pointer;
   position: fixed;
+  // display:flex;
   font-size: 20px;
   width: 200px;
   height: 30px;
@@ -87,7 +88,7 @@ h1 {
   text-align: center;
   text-shadow: 2px 2px 5px blue;
   // margin-right: 600px;
-  margin-left:500px;
+  margin-left:70px;
 }
 
 h2 {
@@ -137,6 +138,20 @@ p {
   width: 1920px;
   
 }
+
+
+title {
+  padding: 20px 20px;
+  font-size: 40px;
+  color: black;
+  width:1000px;
+  font: 40px Arial, sans-serif;
+  text-align: center;
+  text-shadow: 2px 2px 5px blue;
+  // margin-right: 600px;
+  margin-left:100px;
+}
+
 
 h3 {
   color: white;

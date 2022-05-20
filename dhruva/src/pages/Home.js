@@ -92,12 +92,15 @@ const Box = styled.div`
 border-radius:25px;
 border-color:white;
 background-color:white;
+display:flex;
 width:500px;
 height:400px;
 margin-bottom:1000px;
 margin-left:650px;
 
 `;
+
+
 
 export default function Technology () {
     return (

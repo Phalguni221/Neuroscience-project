@@ -4,6 +4,8 @@ import styled from 'styled-components'
 
 const Canvas = styled.div `
 background-color:white;
+width:"482px";
+height:"482px";
 `;
 const Title = styled.div`
 color:white;
@@ -21,9 +23,7 @@ export default function BrainGames() {
 </Title>
 </head>
     <Canvas>
-<canvas id="canvas" width="482" height="482">
-This text is displayed if your browser does not support HTML5 Canvas.
-</canvas>
+<h1> Welcome to Brain Maze!</h1>
 </Canvas>
 </div>
     )
