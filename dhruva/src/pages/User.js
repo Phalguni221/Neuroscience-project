@@ -110,7 +110,7 @@ export default function User () {
           <h2>User Account</h2>
       </Wrapper>
       <Box>
-          <p>Welcome User</p>
+          <h1>Welcome User</h1>
       </Box>
     </div>
   )

@@ -112,9 +112,9 @@ margin-left:500px;
 export default function Technology () {
     return (
     <div>
-       <head>
+       {/* <head>
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"></link>
-       </head>
+       </head> */}
 <Wrapper>
 <h2>Home</h2>
 </Wrapper>
@@ -123,7 +123,6 @@ export default function Technology () {
 <Box>
   <h1>Welcome to the Site!</h1>
 </Box>
-
 </div>
     )
     }

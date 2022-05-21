@@ -115,7 +115,7 @@ const App = () => {
   return (
 
     <>
-     {Loading === false ? (
+     {/* {Loading === false ? ( */}
        <div>
         <a
           className="App-link"
@@ -263,9 +263,9 @@ const App = () => {
     <ContactInfo/>
     </footer>
     </div>
-   ) : (
+   {/* ) : (
     <Loading/>
-  )} 
+  )}  */}
 </>
   )
 }
