@@ -2,7 +2,7 @@ const router = require('express').Router()
 const newinfo = require('../models/newinfo')
 const tech = require('../models/tech')
 
-router.get('/', (req, res) => {
+router.post('/', (req, res) => {
   newinfo.find({})
   .then((newinfo) => {
     console.log("neuro")

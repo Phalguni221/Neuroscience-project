@@ -21,6 +21,13 @@ p {
     padding: 40.7px;
   }
 
+  .container {
+    width:500px;
+    height:500px;
+    border:1px;
+    color:palegoldenrod;
+  }
+
   body::-webkit-scrollbar {
     width: 1em;
   }

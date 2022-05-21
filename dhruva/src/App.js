@@ -111,16 +111,24 @@ const Slider = styled.div`
 
 
 const App = () => {
-  const [loading, setLoading] = useState(true)
-
-  useEffect(() => {
-    setTimeout(() => setLoading(false), 4000)
-  }, [])
 
   return (
+
     <>
-       {loading === false ? (
-    <div>
+     {Loading === false ? (
+       <div>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+        <form action="../../post" method="post" 
+              className="form">
+          <button type="submit">Connected?</button>
+        </form>
      
   <Container>
     <h1>Neurosense: Where Neuroscience Makes Sense</h1>
@@ -141,9 +149,9 @@ const App = () => {
               } />
 
 
-              <Route path="/NewInfo" element={
-                <NewInfo />
-              } />
+             <Route path="/NI" element={
+                 <NewInfo />
+              } /> 
 
 
               <Route path="/Technology" element={
@@ -255,9 +263,9 @@ const App = () => {
     <ContactInfo/>
     </footer>
     </div>
-  ) : (
+   ) : (
     <Loading/>
-  )}
+  )} 
 </>
   )
 }
