@@ -1,7 +1,7 @@
 const React = require('react');
 const Def = require('./default')
 
-function newinfo(data) {
+ function newinfo(data) {
   console.log(data)
   console.log("hello")
 
@@ -35,8 +35,6 @@ function newinfo(data) {
       <h1>newinfo</h1>
       {newinfoFormatted}
     </Def>
-
-
 
   )
 

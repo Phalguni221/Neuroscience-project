@@ -90,14 +90,16 @@ margin-left:500px;
  `;
 
  const Box = styled.div`
- border-radius:25px;
  border-color:white;
  background-color:white;
- width:500px;
- height:400px;
- margin-bottom:1000px;
- margin-left:650px;
-
+ position:absolute;
+ width:800px;
+ height:500px;
+ margin-right:800px;
+ margin-left:500px;
+ // margin-bottom:10000px;
+ // margin-left:1000px;
+ 
  `;
 
  const divStyle = styled.div`

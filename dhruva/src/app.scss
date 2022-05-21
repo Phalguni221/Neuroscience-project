@@ -1,18 +1,18 @@
 a {
   color: palegoldenrod;
   cursor: pointer;
-  position: fixed;
-  // display:flex;
+
+  
   font-size: 20px;
   width: 200px;
-  height: 30px;
+  height: 300px;
   padding: 20px 20px 30px;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
   background-color: rgb(75, 141, 226);
   transition: all 1s;
-// margin-right:1000px;
-  // margin-right:00px;
+margin-right:100px;
+  margin-right:00px;
 
   &:hover {
     transform: scale(.80);

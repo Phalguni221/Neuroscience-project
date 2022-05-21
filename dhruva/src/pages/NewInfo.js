@@ -1,7 +1,8 @@
+
+
 import React from 'react';
-// import Layout from '../components/Layout'
+
 import styled from 'styled-components'
-import ContactInfo from './ContactInfo';
 
 //For styled main container
 const Container = styled.div`
@@ -90,21 +91,49 @@ const Slider = styled.div`
 `;
 
 const Box = styled.div`
-border-radius:25px;
 border-color:white;
 background-color:white;
+position:absolute;
 width:800px;
 height:500px;
-margin-bottom:10000px;
-margin-left:3000px;
+margin-right:800px;
+margin-left:500px;
+// margin-bottom:10000px;
+// margin-left:1000px;
 
 `;
+export default function NI () {
 
-export default function NewInfo () {
   return (
+    <div>
          <Wrapper>
           <h2>New Info</h2>
           </Wrapper>
+      <br></br>
+      <br></br>
+          <Box>
+        <form action="../../post" method="post" 
+              className="form">
+          <button type="submit">Connected?</button>
+        </form>
+      <br></br>
+      <br></br>
+      <br></br>
+        {/* <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+        </a> */}
+          </Box>
+   </div>
+         
+
+        
+          
+        
+        
      
 
   

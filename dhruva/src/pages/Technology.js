@@ -1,3 +1,5 @@
+
+
 import React from 'react';
 
 import styled from 'styled-components'
@@ -92,10 +94,10 @@ const Box = styled.div`
 border-color:white;
 background-color:white;
 position:absolute;
-width:1000px;
+width:800px;
 height:500px;
 margin-right:800px;
-margin-left:900px;
+margin-left:500px;
 // margin-bottom:10000px;
 // margin-left:1000px;
 
@@ -108,6 +110,14 @@ export default function Technology () {
      <Wrapper>
           <h2>Technology</h2>
       </Wrapper>
+      <br></br>
+      <br></br>
+    <Box>
+    <form action="../../post" method="post" 
+              className="form">
+          <button type="submit">Connected?</button>
+        </form>
+    </Box>
     </div>
   
 

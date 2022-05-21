@@ -89,14 +89,15 @@ const Slider = styled.div`
 `;
 
 const Box = styled.div`
-position:absolute;
-border-radius:25px;
 border-color:white;
 background-color:white;
-width:500px;
+position:absolute;
+width:1000px;
 height:500px;
-margin-bottom:1000px;
-margin-left:600px;
+margin-right:800px;
+margin-left:900px;
+// margin-bottom:10000px;
+// margin-left:1000px;
 
 `;
 
