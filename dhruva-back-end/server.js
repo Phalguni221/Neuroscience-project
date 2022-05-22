@@ -18,13 +18,13 @@ app.use(methodOverride('_method'))
 app.use('/articles', require('./controllers/articles'))
 
 app.get('/', (req, res) => {
-  res.json("Hello from server!")
+  require('./controllers/articles')
 })
 
-app.post("/", (req, res) => {
-  console.log("Connected to React");
-  res.redirect("/");
-});
+app.post('/', (req,res) => {
+  res.render('NewInfo')
+})
+
 
 app.get('/tech', (req, res) => {
   require('./controllers/articles')
@@ -37,10 +37,9 @@ app.post('/tech', (req,res) => {
 app.get('/login', (req, res) => {
   res.render('login')
 })
-
-app.post('/Technnology', (req,res) => {
-    res.render('Technology')
-  })
+// app.post('/Technnology', (req,res) => {
+//     res.render('Technology')
+//   })
 
 mongoose
   .connect("mongodb://localhost:27017/neurostyle") //for secret key

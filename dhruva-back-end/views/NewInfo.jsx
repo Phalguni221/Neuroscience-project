@@ -1,14 +1,18 @@
 const React = require('react');
 const Def = require('./default')
+const App = require('./website/App')
 
- function newinfo(data) {
-  console.log(data)
-  console.log("hello")
+import Wrapper from './styled-components/style'
+import Box from './styled-components/style'
+import newinfoSchema from '../models/newInfo'
 
+function newinfo(data) {
+  console.log(Box, App)
+ 
   let newinfoFormatted = data.newinfo?.map((newinfo) => {
     return (
       <div>
-       <div class="column">
+        <div class="column">
           <h1>
             {newinfo.title}
           </h1>
@@ -25,17 +29,23 @@ const Def = require('./default')
           <p>
             {newinfo.link}
           </p>
-      </div> 
+        </div>
       </div>
 
     )
-  })
+  }) 
   return (
-    <Def>
-      <h1>newinfo</h1>
-      {newinfoFormatted}
-    </Def>
+    <div>
+      <App title= "New Info">
+          <Wrapper>
+          <h1>newinfo</h1>
+          </Wrapper>
+          <Box>
+          {newinfoFormatted}
+          </Box>
+      </App>
 
+    </div>
   )
 
 }

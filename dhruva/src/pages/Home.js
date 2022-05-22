@@ -110,6 +110,7 @@ margin-left:500px;
 
 
 export default function Technology () {
+
     return (
     <div>
        {/* <head>

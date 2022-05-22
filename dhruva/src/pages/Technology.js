@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 
 import styled from 'styled-components'
@@ -113,7 +111,7 @@ export default function Technology () {
       <br></br>
       <br></br>
     <Box>
-    <form action="../../post" method="post" 
+    <form action="../../post" method="get" 
               className="form">
           <button type="submit">Connected?</button>
         </form>

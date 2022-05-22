@@ -102,23 +102,40 @@ margin-left:500px;
 // margin-left:1000px;
 
 `;
-export default function NI () {
+export default function NI() {
+  // useState
+  // useEffect
+  // [example, setExample] = useState('test')
+  // state === 'test' 
+  // setExample('new text')
+  // state === 'new text'
+
+  //useEffect()
+  /*
+  useEffect(()=> {
+    *make call to the server
+    Once we have the response from the server
+    format response. 
+  })
+
+  */
 
   return (
     <div>
-         <Wrapper>
-          <h2>New Info</h2>
-          </Wrapper>
+      <Wrapper>
+        <h2>New Info</h2>
+      </Wrapper>
       <br></br>
       <br></br>
-          <Box>
-        <form action="../../post" method="post" 
-              className="form">
+      <Box>
+
+        <form action="../../newinfo" method="get"
+          className="form">
           <button type="submit">Connected?</button>
         </form>
-      <br></br>
-      <br></br>
-      <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
         {/* <a
           className="App-link"
           href="https://reactjs.org"
@@ -126,20 +143,19 @@ export default function NI () {
           rel="noopener noreferrer"
         >
         </a> */}
-          </Box>
-   </div>
-         
+      </Box>
+    </div>
 
-        
-          
-        
-        
-     
 
-  
+
+
+
+
+
+
+
   )
 
-   }
-   
- 
-   
+}
+
+

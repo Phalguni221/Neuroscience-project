@@ -1,22 +1,23 @@
 const React = require('react')
+import Wrapper from './styled-components/style'
+import Box from './styled-components/style'
 
- function Def (html) {
+
+
+function Def ({title, children}) {
     return (
-        <html>
-            <head>
-                <title>Title</title>
-                <link rel="stylesheet" href="/css/neurostyle.css"/>
-                <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
-            </head>
-             <body>
-                {html.children}
-              
-            </body> 
 
+        <div>
+            <Wrapper>
+                {title}
+            </Wrapper>
             <br></br>
             <br></br>
-            <br></br>
-        </html>
+            <Box>
+                {children}
+            </Box>
+
+        </div>
     )
 }
 
