@@ -1,11 +1,11 @@
 const React = require('react');
 const Def = require('../default')
-const App = require('./App')
+const App = require('../App')
 
 import Wrapper from '../styled-components/style'
 import Box from '../styled-components/style'
 
-function home (data) {
+function Home (data) {
 
     return (
     <div>
@@ -23,4 +23,4 @@ function home (data) {
     )
     }
 
-module.exports = home
+module.exports = Home

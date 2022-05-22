@@ -1,11 +1,11 @@
 const React = require('react');
 const Def = require('../default')
-const App = require('./App')
+const App = require('../App')
 
 import Wrapper from '../styled-components/style'
 import Box from '../styled-components/style'
 
- function login () {
+ function Login () {
     return (
     <App title="Login">
        <Wrapper>
@@ -55,4 +55,4 @@ import Box from '../styled-components/style'
     )
     }
 
-    module.exports = login
+    module.exports = Login

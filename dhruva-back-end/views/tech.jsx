@@ -1,9 +1,5 @@
-const React = require('react');
+const React = require('react')
 const Def = require('./default')
-const App = require('./website/App')
-
-import Wrapper from './styled-components/style'
-import Box from './styled-components/style'
 
 function tech(data) {
 let techFormatted = data.tech?.map((tech) => {
@@ -32,14 +28,10 @@ let techFormatted = data.tech?.map((tech) => {
   })
   return (
     <Def>
-     <App title= "Tech">
-        <Wrapper>
+        <main>
             <h1>tech</h1>
-            </Wrapper>
-          <Box>
-            {techFormatted}
-            </Box>
-      </App>
+            {JSON.stringify(data)}
+        </main>
     </Def>
 )
 
