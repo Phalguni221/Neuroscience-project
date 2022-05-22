@@ -2,11 +2,11 @@ const router = require('express').Router()
 const newinfo = require('../models/newinfo')
 const tech = require('../models/tech')
 
-router.post('/', (req, res) => {
+router.get('/', (req, res) => {
   newinfo.find({})
   .then((newinfo) => {
     console.log("neuro")
-res.render('newinfo', { newinfo })
+res.render('newinfo')
   })
     .catch(err => {
       console.log(err) 
@@ -18,7 +18,7 @@ router.get('/tech', (req, res) => {
   tech.find({})
   .then((tech) => {
     console.log("neuro")
-res.render('tech', { tech })
+res.render('tech')
   })
     .catch(err => {
       console.log(err) 
@@ -122,4 +122,3 @@ router.get('/login', (req, res) => {
 // })
 
 module.exports = router
-

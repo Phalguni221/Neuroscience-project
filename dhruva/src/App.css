@@ -1,7 +1,7 @@
 a {
   color: palegoldenrod;
   cursor: pointer;
-  position: fixed;
+  position:absolute;
   font-size: 20px;
   width: 200px;
   height: 30px;
@@ -10,6 +10,8 @@ a {
   border-bottom-left-radius: 10px;
   background-color: rgb(75, 141, 226);
   transition: all 1s;
+  margin-right: 100px;
+  margin-right: 0px;
 }
 a:hover {
   transform: scale(0.8);
@@ -57,7 +59,7 @@ h1 {
   font: 40px Arial, sans-serif;
   text-align: center;
   text-shadow: 2px 2px 5px blue;
-  margin-left: 70px;
+  margin-left: 200px;
 }
 
 h2 {

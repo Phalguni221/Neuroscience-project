@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import ContactInfo from './pages/ContactInfo';
 import NewInfo from "./pages/NewInfo";
 import Technology from "./pages/Technology";
+import SignIn from "./pages/SignIn";
 import Login from "./pages/Login";
 import BrainGames from "./pages/BrainGames";
 import Home from "./pages/Home";
@@ -115,43 +116,38 @@ const App = () => {
   return (
 
     <>
-     {Loading === false ? (
-       <div>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <form action="../../post" method="post" 
-              className="form">
+      {/* {Loading === false ? ( */}
+      <div>
+        <form action="../../post" method="post"
+          className="form">
           <button type="submit">Connected?</button>
         </form>
-     
-  <Container>
-    <h1>Neurosense: Where Neuroscience Makes Sense</h1>
-   
+
+        <h1>Neurosense: Where Neuroscience Makes Sense</h1>
+
         <BrowserRouter>
 
-        <div className="display">
+          <div className="display">
 
             <Routes>
-        
-        
-            <Route path="/" element={
+
+
+              <Route path="/" element={
                 <Home />
               } />
 
-            <Route path="/Login" element={
+              <Route path="/Login" element={
                 <Login />
               } />
 
 
-             <Route path="/NI" element={
-                 <NewInfo />
-              } /> 
+              {/* <Route path="/SignIn" element={
+                 <SignIn />
+              } />  */}
+
+              <Route path="/NewInfo" element={
+                <NewInfo />
+              } />
 
 
               <Route path="/Technology" element={
@@ -163,16 +159,16 @@ const App = () => {
               } />
 
             </Routes>
-          
+
           </div>
-        
-        <div className="display"> 
+
+          <div className="display">
             <ul>
               <Link to="/">Home</Link>
-              
+
               <br></br>
-            <br></br>
-            <br></br>
+              <br></br>
+              <br></br>
             </ul>
 
             <br></br>
@@ -182,11 +178,11 @@ const App = () => {
 
             <ul>
               <Link to="/Technology">Tech</Link>
-             
+
               <br></br>
-            <br></br>
-            <br></br>
-           </ul>
+              <br></br>
+              <br></br>
+            </ul>
 
             <br></br>
             <br></br>
@@ -196,20 +192,33 @@ const App = () => {
             <ul>
               <Link to="/NewInfo">New Info</Link>
               <br></br>
-            <br></br>
-            <br></br>
+              <br></br>
+              <br></br>
             </ul>
 
             <br></br>
             <br></br>
             <br></br>
             <br></br>
+
+            {/* <ul>
+              <Link to="/SignIn">SignIn</Link>
+              
+              <br></br>
+            <br></br>
+            <br></br>
+            </ul>
+
+            <br></br>
+            <br></br>
+            <br></br> */}
+
 
             <ul>
               <Link to="/Login">User Login</Link>
               <br></br>
-            <br></br>
-            <br></br>
+              <br></br>
+              <br></br>
             </ul>
 
             <br></br>
@@ -217,19 +226,20 @@ const App = () => {
             <br></br>
             <br></br>
 
-             <ul>
+
+            <ul>
               <Link to="/BrainGames">Brain Games</Link>
               <br></br>
-            <br></br>
-            <br></br>
+              <br></br>
+              <br></br>
             </ul>
 
             <br></br>
             <br></br>
-            <br></br> 
-        </div>
-  
-          
+            <br></br>
+          </div>
+
+
           {/* <div className="display">
          
             <Routes>
@@ -257,16 +267,14 @@ const App = () => {
           </div> */}
         </BrowserRouter>
 
-    </Container>
-
-    <footer>
-    <ContactInfo/>
-    </footer>
-    </div>
-   ) : (
+        <footer>
+          <ContactInfo />
+        </footer>
+      </div>
+      {/* ) : (
     <Loading/>
-  )} 
-</>
+  )}  */}
+    </>
   )
 }
 
