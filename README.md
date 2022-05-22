@@ -1,4 +1,4 @@
-#Neurosense
+Title of Project: Neurosense
 
 //Inspirtation for application
 My love for neuroscience inspired me to create this scientific based website. I hope to use the skills that I have learned in this bootcamp to create and efficient website where people will have access to neuroscience basics to advancements in neuroscience technology at their fingertips. I plan on introducing this particular scientific field through the form of articles.
