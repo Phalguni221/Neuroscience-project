@@ -1,30 +1,46 @@
-const router = require('express').Router()
-const newinfo = require('../models/newinfo')
-const tech = require('../models/tech')
+const router = require("express").Router();
+const NewInfo = require("../models/newinfo");
+const tech = require("../models/tech");
 
-router.get('/', (req, res) => {
-  newinfo.find({})
-  .then((newinfo) => {
-    console.log("neuro")
-res.render('newinfo')
-  })
-    .catch(err => {
-      console.log(err) 
-      res.render('error404')
+router.get("/", (req, res) => {
+  NewInfo.find()
+    .then((newInfo) => {
+      // console.log("neuro", newinfo);
+      res.render("Info",  {newInfo} );
+      // res.render('Header',{message:'we work'})
     })
-})
+    .catch((err) => {
+      console.log(err);
+      res.render("error404");
+    });
+});
 
-router.get('/tech', (req, res) => {
-  tech.find({})
-  .then((tech) => {
-    console.log("neuro")
-res.render('tech')
-  })
-    .catch(err => {
-      console.log(err) 
-      res.render('error404')
+// router.get("/", (req, res) => {
+//   dress
+//     .find()
+//     .then((Dresses) => {
+//       // console.log(Dresses)
+//       res.render("dresses/index", { Dresses });
+//     })
+//     .catch((err) => {
+//       console.log(err);
+//       res.render("error404");
+//     });
+//   // res.send("API is working properly")
+// });
+
+router.get("/tech", (req, res) => {
+  tech
+    .find({})
+    .then((tech) => {
+      console.log("neuro");
+      res.render("tech", { tech });
     })
-})
+    .catch((err) => {
+      console.log(err);
+      res.render("error404");
+    });
+});
 
 // router.post('/', (req, res) => {
 //   db.Place.create(req.body)
@@ -37,9 +53,9 @@ res.render('tech')
 //   })
 // })
 
-router.get('/login', (req, res) => {
-  res.render('login')
-})
+router.get("/login", (req, res) => {
+  res.render("login");
+});
 
 // router.get('/:id', (req, res) => {
 //   db.Place.findById(req.params.id)
@@ -121,4 +137,4 @@ router.get('/login', (req, res) => {
 //   })
 // })
 
-module.exports = router
+module.exports = router;

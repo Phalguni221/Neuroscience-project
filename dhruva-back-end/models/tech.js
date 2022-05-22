@@ -9,9 +9,7 @@ let techSchema = new mongoose.Schema({
 
 techSchema.methods.showEstablished = function() {}
   
-module.exports = mongoose.model('tech', techSchema, 'tech')
-
-
+module.exports = mongoose.model('tech', techSchema)
 
 // const mongoose = require('mongoose')
 

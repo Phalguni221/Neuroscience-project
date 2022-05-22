@@ -1,38 +1,136 @@
-body {
-    background-color:palegoldenrod;
+a {
+  color: palegoldenrod;
+  cursor: pointer;
+  position:absolute;
+  font-size: 20px;
+  width: 200px;
+  height: 30px;
+  padding: 20px 20px 30px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: rgb(75, 141, 226);
+  transition: all 1s;
+  margin-right: 100px;
+  margin-right: 0px;
+}
+a:hover {
+  transform: scale(0.8);
+  color: blue;
+}
+a:active {
+  color: red;
+  opacity: 0.5;
+}
+
+a:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: fixed;
+  top: 15%;
+  left: 5%;
+  border: 3px solid #fff;
+  transition: all 2s;
+}
+
+a:after {
+  top: -1px;
+  left: -1px;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.navbar-toggler {
+  background-color: blue;
+  width: 20px;
+  height: 20px;
+}
+
+br {
+  display: block;
+  margin: 1070px 0;
 }
 
 h1 {
-    text-align: center;
-    color:blue;
-    font-size:30px;
+  padding: 20px 20px;
+  font-size: 40px;
+  color: black;
+  width: 1000px;
+  font: 40px Arial, sans-serif;
+  text-align: center;
+  text-shadow: 2px 2px 5px blue;
+  margin-left: 200px;
+}
+
+h2 {
+  font-size: 20px;
+  color: white;
+  font: 30px Helvetica;
+  text-align: center;
+  margin-left: 300px;
+  margin-bottom: 600px;
+}
+
+h3 {
+  text-align: center;
+  margin-right: 600px;
+}
+
+body {
+  text-align: center;
+  background-color: rgb(53, 188, 233);
+  width: 700px;
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: lightgray;
+  outline: px solid #eee;
+}
+
+img {
+  position: fixed;
+  height: 3px;
+  width: 30px;
+}
+
+hr {
+  color: black;
 }
 
 p {
-    justify-content: center;
-    text-align: center;
-    color:blue;
-    font-size:20px;
+  text-align: center;
+  color: black;
+  width: 1920px;
 }
 
-.column {
-    float:left;
-    width: 20.33%;
-    padding: 40.7px;
-  }
+title {
+  padding: 20px 20px;
+  font-size: 40px;
+  color: black;
+  width: 1000px;
+  font: 40px Arial, sans-serif;
+  text-align: center;
+  text-shadow: 2px 2px 5px blue;
+  margin-left: 100px;
+}
 
-  .container {
-    width:500px;
-    height:500px;
-    border:1px;
-    color:palegoldenrod;
-  }
+h3 {
+  color: white;
+  width: 500px;
+  margin-top: 10px;
+  margin-left: 700px;
+  text-align: center;
+  font: 18px Helvetica;
+}
 
-  body::-webkit-scrollbar {
-    width: 1em;
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background-color: lightgray;
-    outline: px solid #eee;
-  }
+.splitter {
+  background-color: limegreen;
+}
+
+/*# sourceMappingURL=App.css.map */
+
+/*# sourceMappingURL=App.css.map */

@@ -1,53 +1,46 @@
-const React = require('react');
-const Def = require('./default')
-const App = require('./website/App')
+const React = require("react");
+const Def = require("./default");
+import styled from "styled-components";
 
-import Wrapper from './styled-components/style'
-import Box from './styled-components/style'
-import newinfoSchema from '../models/newInfo'
+const Container = styled.div`
+  color: blue;
+`;
 
-function newinfo(data) {
-  console.log(Box, App)
- 
+export const Wrapper= styled.div`
+  background-color: black;
+  // margin-top:20px;
+  display: flex;
+  width: 800px;
+  height: 100px;
+  margin-left: 500px;
+  // margin-bottom:4000px;
+`;
+
+function NewInfo(data) {
+  console.log(data);
+  console.log("hello");
+
   let newinfoFormatted = data.newinfo?.map((newinfo) => {
     return (
       <div>
-        <div class="column">
-          <h1>
-            {newinfo.title}
-          </h1>
+        <Container>
+          <h1>{newinfo.title}</h1>
 
+          <p>{newinfo.author}</p>
 
-          <p>
-            {newinfo.author}
-          </p>
+          <p>Located in {newinfo.date}</p>
 
-          <p>
-            Located in {newinfo.date}
-          </p>
-
-          <p>
-            {newinfo.link}
-          </p>
-        </div>
+          <p>{newinfo.link}</p>
+        </Container>
       </div>
+    );
+  });
 
-    )
-  }) 
   return (
-    <div>
-      <App title= "New Info">
-          <Wrapper>
-          <h1>newinfo</h1>
-          </Wrapper>
-          <Box>
-          {newinfoFormatted}
-          </Box>
-      </App>
+      <h1>new Info</h1>
 
-    </div>
-  )
-
+  );
 }
 
-module.exports = newinfo
+module.exports = NewInfo;
+
