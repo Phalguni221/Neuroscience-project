@@ -8,6 +8,29 @@ router.get("/", (req, res) => {
       // res.render('Header',{message:'we work'})
     })
   
+    router.get("/home", (req, res) => {
+      // console.log("neuro", newinfo);
+      res.render("website/home");
+      // res.render('Header',{message:'we work'})
+    })
+
+    router.get("/NewInfo", (req, res) => {
+      // console.log("neuro", newinfo);
+      res.render("website/NewInfo");
+      // res.render('Header',{message:'we work'})
+    })
+
+    router.get("/tech", (req, res) => {
+      // console.log("neuro", newinfo);
+      res.render("website/tech");
+      // res.render('Header',{message:'we work'})
+    })
+
+    router.get("/login", (req, res) => {
+      // console.log("neuro", newinfo);
+      res.render("website/login");
+      // res.render('Header',{message:'we work'})
+    })
 
 // router.get("/", (req, res) => {
 //   dress
@@ -23,18 +46,18 @@ router.get("/", (req, res) => {
 //   // res.send("API is working properly")
 // });
 
-router.get("/tech", (req, res) => {
-  tech
-    .find({})
-    .then((tech) => {
-      console.log("neuro");
-      res.render("tech", { tech });
-    })
-    .catch((err) => {
-      console.log(err);
-      res.render("error404");
-    });
-});
+// router.get("/tech", (req, res) => {
+//   tech
+//     .find({})
+//     .then((tech) => {
+//       console.log("neuro");
+//       res.render("tech", { tech });
+//     })
+//     .catch((err) => {
+//       console.log(err);
+//       res.render("error404");
+//     });
+// });
 
 // router.post('/', (req, res) => {
 //   db.Place.create(req.body)

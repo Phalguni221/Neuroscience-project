@@ -26,8 +26,21 @@ app.post('/', (req, res) => {
   res.render('website')
 })
 
-app.get('/dresses/Edit', (req, res) => {
-  res.render('Editpage')
+app.get('/website/home', (req, res) => {
+  res.render('Home')
+})
+
+app.get('/website/NewInfo', (req, res) => {
+  res.send('NewInfo')
+})
+
+app.get('/website/tech', (req, res) => {
+  res.render('tech')
+})
+
+
+app.get('/website/login', (req, res) => {
+  res.render('login')
 })
 
 app.get('*', (req, res) => {

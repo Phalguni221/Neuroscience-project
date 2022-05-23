@@ -1,46 +1,80 @@
 const React = require("react");
 const Def = require("../default");
-import styled from "styled-components";
-
-const Container = styled.div`
-  color: blue;
-`;
-
-export const Wrapper= styled.div`
-  background-color: black;
-  // margin-top:20px;
-  display: flex;
-  width: 800px;
-  height: 100px;
-  margin-left: 500px;
-  // margin-bottom:4000px;
-`;
 
 function NewInfo(data) {
   console.log(data);
-  console.log("hello");
+//   console.log("hello");
 
-  let newinfoFormatted = data.newinfo?.map((newinfo) => {
+
+let newinfoFormatted = data.newinfo?.map((newinfo) => {
     return (
-      <div>
-        <Container>
-          <h1>{newinfo.title}</h1>
+    
+        <Def>
+          <div class = "Box">
+         <h1>{newinfo.title}</h1>
 
           <p>{newinfo.author}</p>
 
-          <p>Located in {newinfo.date}</p>
+          <p>{newinfo.date}</p>
 
           <p>{newinfo.link}</p>
-        </Container>
-      </div>
-    );
-  });
+          </div>
+          </Def>
+        
+    )
+
+  })
 
   return (
-      <h1>new Info</h1>
+   <html>
+     <head>
+<link rel="stylesheet" href="/css/neurostyle.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+<title>Hello</title>
+</head>
+     <div class = "Wrapper">
+           <h1>New Info</h1>
+        </div>
+         <body>
+             <p>
+             <form method="GET" action="home">
+             <text><input type="Submit" name="home" class="btn-primary" value="home"/></text>
+             </form> 
+             </p>
+             <br></br>
 
-  );
-}
+             <p>
+               <form method="GET" action="NewInfo">
+             <text><input type="Submit" name="newinfo" class="btn-primary" value="newinfo"/></text>
+             </form> 
+          <br></br>
+          <br></br>
+             </p>
 
-module.exports = NewInfo;
+              <p>
+             <form method="GET" action="tech">
+             <text><input type="Submit" name="tech" class="btn-primary" value="tech"/></text>
+             </form> 
+             <br></br>
+             <br></br>
+              </p>
 
+              <p>
+             <form method="GET" action="login">
+             <text><input type="Submit" name="login" class="btn-primary" value="login"/></text>
+             </form> 
+          <br></br>
+          <br></br>
+              </p>
+            </body>
+      <div class = "Box">
+      <p>{newinfoFormatted}</p>
+      </div>
+</html>
+) 
+
+  }
+
+module.exports = NewInfo
+
+  
