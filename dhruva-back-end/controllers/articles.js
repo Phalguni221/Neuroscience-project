@@ -3,17 +3,11 @@ const NewInfo = require("../models/newinfo");
 const tech = require("../models/tech");
 
 router.get("/", (req, res) => {
-  NewInfo.find()
-    .then((newInfo) => {
       // console.log("neuro", newinfo);
-      res.render("Info",  {newInfo} );
+      res.render("website/App");
       // res.render('Header',{message:'we work'})
     })
-    .catch((err) => {
-      console.log(err);
-      res.render("error404");
-    });
-});
+  
 
 // router.get("/", (req, res) => {
 //   dress

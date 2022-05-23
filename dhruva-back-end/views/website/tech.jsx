@@ -1,5 +1,5 @@
 const React = require('react')
-const Def = require('./default')
+const Def = require('../default')
 
 function tech(data) {
 let techFormatted = data.tech?.map((tech) => {

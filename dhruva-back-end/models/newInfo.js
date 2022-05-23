@@ -11,4 +11,4 @@ newinfoSchema.methods.showEstablished = function() {
 return `${this.title} by ${this.author}, published ${this.date}. Link to article: ${this.link}.`
 }
   
-module.exports = mongoose.model('newinfo', newinfoSchema)
+module.exports = mongoose.model('newinfos', newinfoSchema)
