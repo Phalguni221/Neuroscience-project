@@ -1,5 +1,5 @@
 const React = require("react");
-const Def = require("./default");
+const Def = require("../default");
 import styled from "styled-components";
 
 const Container = styled.div`

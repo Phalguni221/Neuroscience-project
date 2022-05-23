@@ -22,9 +22,26 @@ app.get("/", (req, res) => res.send("backend working ..."));
 app.use("/articles", ArticleController);
 
 
-app.get('/', (req, res) => {
-  res.render("Info")
+app.post('/', (req, res) => {
+  res.render('website')
 })
+
+app.get('/dresses/Edit', (req, res) => {
+  res.render('Editpage')
+})
+
+app.get('*', (req, res) => {
+  res.render('error404')
+})
+
+app.get('/', (req, res) => {
+  res.render('dresses/index')
+})
+
+app.get('/dresses/delete', (req, res) => {
+  res.render('Deletepage')
+})
+
 
 
 
