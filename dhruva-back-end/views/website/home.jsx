@@ -1,9 +1,9 @@
 const React = require('react');
 const Def = require('../default')
-const App = require('../App')
+// const App = require('../App')
 
-import React from 'react';
-import Def from '../default';
+// import React from 'react';
+// import Def from '../default';
 import Newinfo from './newinfo'
 // import Home from './website/home'
 // import Login from './website/login'
@@ -11,15 +11,6 @@ import Newinfo from './newinfo'
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
 import styled from 'styled-components';
 
-const Wrapper = styled.div`
-background-color:black;
-// margin-top:20px;
-display:flex;
-width:800px;
-height:100px;
-margin-left:500px;
-// margin-bottom:4000px;
-`;
 
 function Home ({ children, title }) {
 
@@ -31,9 +22,7 @@ function Home ({ children, title }) {
                 <title>Hello</title>
             </head>
               
-        
-                
-            
+      
                 <header>
 
                 </header>
@@ -42,12 +31,12 @@ function Home ({ children, title }) {
                     {children}
                 </Def> */}
                  <div class= "Wrapper">
-                <h1>Hello</h1>
+                <h1>Neurosense:Where Neuroscience Makes Sense</h1>
                 </div>
                 
         <body>
              <p>
-             <form method="GET" action="./home.jsx">
+             <form method="GET" action="home">
              <text><input type="Submit" name="home" class="btn-primary" value="home"/></text>
              </form> 
              </p>
@@ -65,21 +54,43 @@ function Home ({ children, title }) {
              <form method="GET" action="tech">
              <text><input type="Submit" name="tech" class="btn-primary" value="tech"/></text>
              </form> 
+             <br></br>
+             <br></br>
               </p>
 
               <p>
              <form method="GET" action="login">
              <text><input type="Submit" name="login" class="btn-primary" value="login"/></text>
              </form> 
+          <br></br>
+          <br></br>
               </p>
             </body>   
+            <div class = "Box">
+    <p>Hello</p>
+    </div>
                 <footer>
+                <br></br>
+<div>
+<h3>
+   Want to find more information from the creator of the website? Find her information located below!
+ </h3>
+ <h3>
+     Email address: Phalguni221@gmail.com
+ </h3>
 
+ <h3>
+     Phone number: 732-259-1884
+ </h3>
+
+<h3>
+LinkedIn: https://www.linkedin.com/in/sriya-bhamidipati/
+</h3>
+</div>
                 </footer>
    
         </html>
     )
 }
-
 
 module.exports = Home

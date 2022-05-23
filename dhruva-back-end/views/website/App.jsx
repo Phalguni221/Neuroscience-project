@@ -43,7 +43,7 @@ function App ({ children, title }) {
                 
         <body>
              <p>
-             <form method="GET" action="./home.jsx">
+             <form method="GET" action="home">
              <text><input type="Submit" name="home" class="btn-primary" value="home"/></text>
              </form> 
              </p>

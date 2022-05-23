@@ -14,7 +14,7 @@ a {
   
     &:hover {
       transform: scale(.80);
-      color:blue;
+      color:white;
     }
      &:active {
       color: red;
@@ -26,7 +26,7 @@ a {
     content: "";
     width: 10px;
     height: 10px;
-    position:fixed;
+    // position:fixed;
     top: 15%;
     left: 5%;
     border: 3px solid #fff;
@@ -80,7 +80,7 @@ a {
   
     &:hover {
       transform: scale(.80);
-      color:blue;
+      color:white;
     }
      &:active {
       color: red;
@@ -105,7 +105,25 @@ a {
     border-top: 1px solid black;
     border-left: 1px solid black;
   }
+
+  .Box {
+    border-color: white;
+    background-color: palegoldenrod;
+    // position: absolute;
+    display:inline-block;
+    width: 800px;
+    height: 500px;
+    // margin-right: 1100px;
+    margin-left: 500px;
+    margin-bottom:2000px;
+    // margin-left:1000px;
+
+  }
   
+  .column {
+    background-color:palegoldenrod;
+    color:black;
+  }
     // .content {
     //   min-height: 100%;
     // }

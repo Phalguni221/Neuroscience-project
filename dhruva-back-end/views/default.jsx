@@ -1,6 +1,6 @@
 const React = require("react");
 // import Wrapper from "./styled-components/style";
-import Box from "./styled-components/style";
+
 
 <head>
 <link rel="stylesheet" href="/css/neurostyle.css" />
@@ -11,9 +11,9 @@ function Def({ title,children }) {
     <div>
         def works
       {/* <Wrapper>{title}</Wrapper> */}
-      <Box>{children}</Box>
+      {children}
     </div>
   );
 }
 
-module.exports = Def;
+module.exports = Def
