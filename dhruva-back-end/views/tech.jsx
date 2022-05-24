@@ -2,7 +2,7 @@ const React = require('react')
 const Def = require('./default')
 
 function tech(data) {
-let techFormatted = data.techs.map((tech) => {
+let techFormatted = data.tech.map((tech) => {
   return (
     <div className="col-sm-6">
       <h2>

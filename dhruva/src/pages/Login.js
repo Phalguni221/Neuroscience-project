@@ -1,5 +1,7 @@
-const React = require('react')
-const Def = require('./default')
+import React from 'react';
+// import Layout from '../components/Layout'
+import styled from 'styled-components'
+import User from './User'
 
  //For styled main container
  const Container = styled.div`
@@ -10,18 +12,17 @@ const Def = require('./default')
  `;
 
 
- //For wrapper
-  eslint-disable-next-line
- const Wrapper = styled.div`
- background-color:black;
- margin-top:20px;
- display:flex;
- width:800px;
- height:100px;
- margin-left:500px;
- margin-bottom:2500px;
- `;
-
+//For wrapper
+// eslint-disable-next-line
+const Wrapper = styled.div`
+background-color:black;
+// margin-top:20px;
+display:flex;
+width:800px;
+height:100px;
+margin-left:500px;
+// margin-bottom:4000px;
+`;
 //eslint-disable-next-line
  const Navbar = styled.div`
  background-color:black;
@@ -88,28 +89,54 @@ const Def = require('./default')
  `;
 
  const Box = styled.div`
+ displaye:flex;
  border-radius:25px;
  border-color:white;
  background-color:white;
- width:800px;
+ width:500px;
  height:500px;
- margin-bottom:10000px;
- margin-left:3000px;
+ margin-bottom:1000px;
+ margin-left:600px;
 
  `;
 
  export default function Login () {
+
    return (
-      <Def>
-    <form method = "GET" action="./UserLogin/User.js">
+    <div>
+      <Wrapper>
+          <h2>User Login</h2>
+      </Wrapper>
+      <br></br>
+      <br></br>
+      <Box>
+        <br></br>
+        <br></br>
+
+    <form method ="POST" action="User.js">
    <label for="fname">First name:</label><br/>
-   <input type="text" id="fname" name="fname" value="John"/>
-   <label for="lname">Last name:</label>
-   <input type="text" id="lname" name="lname" value="Doe"/>
+
+   <input type="text" id="fname" name="fname" />
+   <br></br>
+
+   <label for="lname">Last name:</label><br/>
+   <input type="text" id="lname" name="lname" />
+   <br></br>
+
+   <label for="username">Username:</label><br/>
+   <input type="text" id="username" name="username"  required="true"/>
+   <br></br>
+
+   <label for="password">Password:</label><br/>
+   <input type="text" id="password" name="password"  required="true"/>
+   <br></br>
+
    <input type="submit" value="Submit"></input>
    </form>
-   </Def>
+   </Box>
+   </div>
+  
 
    
-   )
+         )
    }

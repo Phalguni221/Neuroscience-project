@@ -1,10 +1,10 @@
+
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
 import styled from 'styled-components';
 // import {Link} from Gatsby;
 import ContactInfo from './pages/ContactInfo';
 import NewInfo from "./pages/NewInfo";
 import Technology from "./pages/Technology";
-import Login from "./pages/Login";
 import BrainGames from "./pages/BrainGames";
 import Home from "./pages/Home";
 import GatsbyLink from 'gatsby-link';
@@ -13,6 +13,9 @@ import React, { useState, useEffect } from 'react'
 import logo from './logo.svg';
 import './App.css';
 import Loading from './pages/Loading'
+import Login from './pages/Login'
+
+import { application } from 'express';
 
 //For styled main container
 const Container = styled.div`
@@ -153,6 +156,10 @@ const App = () => {
               <Route path="/BrainGames" element={
                 <BrainGames />
               } />
+{/* 
+              <Route path="/User" element={
+                <User />
+              } /> */}
 
             </Routes>
           

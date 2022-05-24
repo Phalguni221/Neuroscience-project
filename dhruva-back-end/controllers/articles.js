@@ -1,10 +1,10 @@
 const router = require('express').Router()
-const db = require('../models/newinfo')
+const db = require('../models')
 
 router.get('/', (req, res) => {
-  newinfo.find()
+  db.find()
   .then((newinfo) => {
-res.render('newinfo/server', { newinfo })
+res.render('newinfo/index', { newinfo })
   })
     .catch(err => {
       console.log(err) 

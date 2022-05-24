@@ -19,7 +19,7 @@ background-color:black;
 display:flex;
 width:800px;
 height:100px;
-margin-left:500px;
+margin-left:700px;
 // margin-bottom:4000px;
 `;
 
@@ -102,14 +102,14 @@ margin-left:900px;
 `;
 
 
-export default function Technology () {
+export default function User () {
   return (
     <div>
      <Wrapper>
-          <h2>Technology</h2>
+          <h2>User Account</h2>
       </Wrapper>
       <Box>
-        <h1>Hello</h1>
+          <p>Welcome User</p>
       </Box>
     </div>
   
@@ -117,5 +117,3 @@ export default function Technology () {
   )
 
    }
-   
-   
