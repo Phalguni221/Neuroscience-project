@@ -4,12 +4,12 @@ const Def = require('../default')
 
 // import React from 'react';
 // import Def from '../default';
-import Newinfo from './newinfo'
+import Newinfo from './NewInfo'
 // import Home from './website/home'
 // import Login from './website/login'
 // import Tech from './tech'
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
-import styled from 'styled-components';
+import styled from './../styled-components/style';
 
 
 function Home ({ children, title }) {

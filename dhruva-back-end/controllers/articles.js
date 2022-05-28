@@ -1,6 +1,6 @@
 const router = require("express").Router();
-const NewInfo = require("../models/newinfo");
-const tech = require("../models/tech");
+const NewInfo = require("./../models/newInfo");
+const tech = require("./../models/tech");
 
 router.get("/", (req, res) => {
       // console.log("neuro", newinfo);
